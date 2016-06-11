@@ -1,0 +1,559 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-----------------------------------------------通用設定-------------------------------------------------------------------*/
+/*---------------------CSS3 動畫設定-----------------------------------------------*/
+
+img,
+.logo,
+.news-box, .special, .special-word,
+#footer,
+#footer div
+
+{
+-webkit-transition: all 500ms cubic-bezier(0.410, 0.390, 0.485, 0.465);
+   -moz-transition: all 500ms cubic-bezier(0.410, 0.390, 0.485, 0.465);
+     -o-transition: all 500ms cubic-bezier(0.410, 0.390, 0.485, 0.465);
+        transition: all 500ms cubic-bezier(0.410, 0.390, 0.485, 0.465); /* custom */
+
+-webkit-transition-timing-function: cubic-bezier(0.410, 0.390, 0.485, 0.465);
+   -moz-transition-timing-function: cubic-bezier(0.410, 0.390, 0.485, 0.465);
+     -o-transition-timing-function: cubic-bezier(0.410, 0.390, 0.485, 0.465);
+        transition-timing-function: cubic-bezier(0.410, 0.390, 0.485, 0.465); /* custom */
+	}
+
+
+a , .btn
+{ text-decoration: none; -webkit-transition: all 0.2s ease-out 0s;
+-moz-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s; } /*--連結背景動畫--*/
+
+/*----內文 標題 段落--------*/
+body{ color:#333;line-height:160%; font-size:15px;}
+html,body{height:100%;}
+
+a{ color:#333;}
+a:hover, a:focus, a:active{ text-decoration:none; color:#b5a16c;}
+a img {border:0}
+
+
+
+/*----------------------------------------------------------------all--------*/
+body{ background-color:#000; background-repeat:repeat; font-family: 'Crimson Text', "微軟正黑體"}
+
+h1,h2,h3{font-family: 'Vidaloka', "微軟正黑體"; letter-spacing:1.8px;}
+h2{ text-transform:uppercase;}
+
+/*--------------------------------nav--------*/
+#nav{ position:fixed; z-index:10; background:rgba(0,0,0,.5); left:0; top:0; height:100%; width:250px;}
+
+.logo{ margin:15% 10px; text-align:center}
+.logo:after{display:block; content:""; background:#b5a16c; width:60px; height:2px; margin:10% auto 0;}
+
+.navbar-default{ background:none; border:0; box-shadow:none; margin:0; padding:0;}
+.navbar-default .navbar-collapse{ padding:0}
+#nav ul{ margin:0; padding:0; list-style:none; text-align:center; float:none;}
+#nav ul li{ float:none; margin-bottom:2px;}
+#nav ul li a{ color:#FFF; display:block; padding:15px 10px; letter-spacing:1px; font-size:120%; }
+#nav ul li a:hover{ background:rgba(0,0,0,.75); }
+#nav ul li.active a{ background:rgba(0,0,0,.75); color:#b5a16c}
+
+/*--------------------------------smxs nav---------*/
+.responsive-menu { display: none;}
+
+
+/*--------------------------------main-contant--------*/
+.main-contant{ width:83%; margin-left:250px; background:#FFF; position:relative; z-index:50; margin-top:-6px;}
+
+.padding{ padding:8%;}
+
+
+/*news*/
+.news-box{ width:360px;  position:absolute; top:-14.5%; right:5%; text-align:center; background:rgba(0,0,0,.5); padding:40px 20px; }
+.news-box h2{margin:0 auto; font-size:200%; color:#BFA253; text-align:center;  overflow:hidden; }
+.news-box h2:after{ display:block; content:""; background:#b5a16c; width:60px; height:2px; margin:30px auto 0;}
+
+#ad{padding-top: 0px;position: relative;width: 310px;height: 300px;	overflow: hidden;	margin: 0 auto;}
+#ad p{	cursor: pointer;	position: absolute;	top:45%; left:-2px;	z-index: 5;}
+#ad p.btn_left{	left: 300px;}
+
+ul.pic{	position: absolute; list-style:none; margin:0; padding:0;	width: 1100px;}
+ul.pic li{	width:310px;	float: left; margin-bottom:20px; margin-top:30px;}
+ul.pic li span{display:block;	margin-left:20px; margin-right:20px; margin-bottom:20px;color:#FFF;	text-transform:uppercase;}
+ul.pic li img{	margin:0 auto; max-width:90%}
+ul.page{margin: 0 auto;padding-top: 20px;}
+
+
+/*about*/
+#about{ text-align:center;}
+#about .padding{}
+#about h2{ margin:0 0 30px;}
+#about h2:after{ display:block; content:""; background:#b5a16c; width:500px; height:2px; margin:30px auto 0;}
+
+#Gemstones_Main{ text-align:center;}
+#Gemstones_Main .padding{}
+#Gemstones_Main h2{ margin:0 0 30px;}
+#Gemstones_Main h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
+
+
+#Gemstones_rub{ text-align:center;}
+#Gemstones_rub .padding{}
+#Gemstones_rub h2{ margin:0 0 30px;}
+#Gemstones_rub h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
+
+#Gemstones_sap { text-align:center;}
+#Gemstones_sap .padding{}
+#Gemstones_sap h2{ margin:0 0 30px;}
+#Gemstones_sap h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
+
+#services { text-align:center;}
+#services .padding{}
+#services h2{ margin:0 0 30px;}
+#services h2:after{ display:block; content:""; background:#b5a16c; width:500px; height:2px; margin:30px auto 0;}
+
+#contact { text-align:center;}
+#contact .padding{}
+#contact h2{ margin:0 0 30px;}
+#contact h2:after{ display:block; content:""; background:#b5a16c; width:500px; height:2px; margin:30px auto 0;}
+
+
+/*.special*/
+.special{ background:#efefef;}
+
+.special-box{ padding-left:0; padding-right:0;}
+
+.special-word{ padding:8%;}
+.special-word h2{ margin:0 0 30px; font-size:220%;}
+.special-word h2 span{ font-weight:bold;}
+.special-word p{ margin:0; font-style:italic; position:relative; padding-left:80px;}
+.special-word p:before{ position:absolute; left:0; top:0; display:block; content:""; background:#b5a16c; width:60px; height:2px; margin-top:5px;}
+
+#grid-S figure.effect-bubba h2
+{
+    padding-top:25%;
+    color: #BFA253;
+}
+
+/*----------------特效必要框架內容--------可貼在 LG 版 再自行再 md~xs 更改-----------*/
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	/*padding: 1em 0 4em;*/
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	/*margin: 10px 1%;*/
+	min-width: 50%;
+	max-width: none;
+	max-height: 360px;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	padding: 1px;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	/*min-height: 100%;*/
+	max-width: 100%; width:100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*grid-B*/
+#grid-B figure {
+	min-width: 100%;
+	max-width: none;
+	max-height: 720px;
+}
+
+
+/*--------------------------------------------------------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	background: #b5a16c;
+}
+
+figure.effect-bubba img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 30%; font-size:160%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+	color: #BFA253;
+}
+
+figure.effect-bubba p {
+	padding: 10px 0; line-height:1.2;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+/*newpro*/
+#newpro{/* margin-bottom:30px;*/ border-bottom:3px solid #b5a16c;}
+
+
+/*recommend*/
+#recommend{}
+
+
+/*products*/
+#products{ padding-left:0; padding-right:0; text-align:center;}
+#products h2{ margin:0 0 30px;}
+#products h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
+
+.centered-pills {
+	text-align: center
+}
+.centered-pills ul.nav-pills {
+	display: inline-block;
+	margin-bottom: 50px
+}
+.centered-pills li {
+	display: inline
+}
+.centered-pills a {
+	float: left
+}
+.nav-pills > li > a {
+	border-radius: 0;
+	color: #333;
+	border: 1px solid #ccc;
+
+}
+.nav-pills > li+li > a{margin-left: 20px}
+.nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li > a.active {
+	background: #b5a16c;
+	border-color: #b5a16c;
+	color: #fff
+}
+
+.products-box{ padding-left:0; padding-right:0;}
+.products-box img {	width: 100%;}
+.portfolio-item {
+	position: relative;
+	overflow: hidden;
+	padding: 1px;
+	text-align: center;
+
+}
+.portfolio-item figcaption {
+	background: #BFA253;
+	background: rgba(191, 162, 83, 0.59);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	opacity: 0;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-webkit-transform: rotate(3deg) scale(0.6);
+	-moz-transform: rotate(3deg) scale(0.6);
+	-ms-transform: rotate(3deg)) scale(0.6);
+	-o-transform: rotate(3deg) scale(0.6);
+	transform: rotate(3deg) scale(0.6);
+}
+.portfolio-item:hover figcaption {
+	opacity: 1;
+	-webkit-transform: rotate(0deg) scale(1);
+	-moz-transform: rotate(0deg) scale(1);
+	-ms-transform: rotate(0deg) scale(1);
+	-o-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+}
+figcaption h3 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 28px;
+	margin-top: 30%
+}
+
+
+
+/*service*/
+#services{ background:#111; color:#FFF; text-align:center;}
+#services h2{ margin:0 0 30px;}
+
+.services-box{ position:relative;}
+
+.icon-box { font-size:120%; font-weight:600;
+	background: #fff; color:#000;
+	border-radius: 5px;	padding: 10% 5%;
+	text-align: center
+}
+.square_coner {
+	margin: 0 auto;
+	width: 100px;
+	margin-bottom: 20px
+}
+.texts-a {
+	display: inline-block;
+	text-align: center;
+	background: #b5a16c;
+	border-radius: 50%; width:100px; height:100px; line-height:100px;
+	color: #fff
+}
+.texts-a img{padding:15%; margin:10px; vertical-align:top;}
+.hover-box {
+	position: absolute;	top: 0;	left: 0;width: 100%;height: 100%;
+	border-radius: 5px;padding: 10%;
+	background: #b5a16c;
+	visibility: hidden\0/;
+	opacity: 0;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-webkit-transform: translateY(70px) scale(0.2);
+	-moz-transform: translateY(70px) scale(0.2);
+	-ms-transform: translateY(70px) scale(0.2);
+	-o-transform: translateY(70px) scale(0.2);
+	transform: translateY(70px) scale(0.2);
+}
+.services-box:hover .hover-box {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translateY(0px) scale(1);
+	-moz-transform: translateY(0px) scale(1);
+	-ms-transform: translateY(0px) scale(1);
+	-o-transform: translateY(0px) scale(1);
+	transform: translateY(0px) scale(1);
+}
+.inner-hover-box p {
+	color: #fff;
+	padding:0px; margin:0;
+}
+
+
+
+/*contact*/
+#contact{ background-repeat:no-repeat; background-position:center;background-size:cover; color:#FFF;}
+#contact .padding{ background:rgba(0,0,0,.5); text-align:center;}
+
+#contact-box{ margin:15px; padding:5%; border:2px solid #FFF;}
+
+#contact ul{ list-style:none; margin:0 0 30px; padding:0;}
+#contact ul li{ font-size:130%; margin-bottom:15px;}
+#contact ul li:first-child{font-size: 300%;  font-weight: 600;  font-style: italic; margin-bottom:30px;}
+#contact ul li:last-child{ margin-bottom:0;}
+#contact ul li i{ font-size:18px; margin-right:5px;}
+#contact ul li:first-child i{ font-size:30px;}
+#contact ul li a{ color:#FFF;}
+#contact ul li a:hover{}
+
+#contact .btn-primary i{margin-right: 5px;}
+
+.btn-primary
+{
+    border:none; text-transform: uppercase; font-size: 130%; padding: 15px 30px; letter-spacing: 1px;
+    background: #BFA253;
+    -webkit-transition: all 0.2s ease-out 0s; -moz-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s;
+}
+.btn-primary:focus, .btn-primary:hover{ background:#000;}
+.btn-default{background: #b5a16c;border:none; text-transform: uppercase; padding: 10px 30px; letter-spacing: 1px; color:#FFF; font-size: 130%; text-shadow:none;}
+.btn-default:hover, .btn-default:focus{ background:#000; color:#FFF;}
+
+.modal-content{ text-align:center;}
+.modal-content .modal-header{ padding:30px;}
+.modal-content .modal-header .modal-title{ text-transform:uppercase;}
+.modal-content .modal-header .close{ font-size:360%; margin-top:-8px;-webkit-transition: all 0.2s ease-out 0s;
+-moz-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s;}
+.modal-content .modal-body{ padding:30px;}
+.modal-content .form-group{ margin-bottom:30px;}
+/*.modal-content .form-control{ border-color:#b5a16c;}*/
+.modal-content label{ text-transform:uppercase; font-size:120%; color:#b5a16c;}
+.modal-content .btn-default i{    font-size: 70%; vertical-align: middle; margin-top: -10px; margin-right: 5px;}
+
+
+
+/*--------------------------------footer--------*/
+footer{ background-color:#000; position:relative; z-index:50; padding-top:15px; padding-bottom:15px;}
+
+
+
+/*---------------------------分享連結---------------------------*/
+.footer-icon{ margin-top:12px; width:17%; padding-left:0; padding-right:0;}
+.footer-icon ul{ text-align:center;
+	padding:0;
+	margin:0;
+}
+.footer-icon ul li{
+	display:inline-block !important;
+	margin:0 4px;
+}
+.footer-icon ul li a{ 	color:#333 !important;	}
+.footer-icon ul li a:hover {color:#fff !important; text-decoration:none;	}
+.footer-icon ul li a i{
+	background:#FFF; color:#000;
+	display: block;
+	height: 35px;
+	width: 35px;
+	line-height:36px;
+	font-size:20px;
+	text-align:center;
+		border-radius:100%;transition:all 0.8s ease-in-out;
+}
+
+.footer-icon ul li a .fa-facebook:hover, .footer-icon ul li a .fa-facebook:focus {background:#3c5a9a; color:#FFF}
+.footer-icon ul li a .fa-google-plus:hover ,.footer-icon ul li a .fa-google-plus:focus {background:#df4b38; color:#FFF}
+.footer-icon ul li a .fa-youtube-play:hover, .footer-icon ul li a .fa-youtube-play:focus {background:#e01a2b; color:#FFF}
+.footer-icon ul li a .fa-instagram:hover, .footer-icon ul li a .fa-instagram:focus{background:#6a453b; color:#FFF}
+/*--------------------------- 分享連結 end---------------------------*/
+
+
+#copyright-box{ text-align:right; color:rgba(255,255,255,0.4); width:83%;}
+#copyright-box a{color:rgba(255,255,255,0.4);}
+
+.company-name{ margin-bottom:5px;}
+
+#copyright-box ul{margin:0; padding:0;}
+#copyright-box ul li { margin:0; padding:0;display: inline-block}
+#copyright-box ul li+li{ margin-left:1%}
+#copyright-box ul li a {padding: 0; display:inline;color: rgba(255,255,255,0.4)}
+#copyright-box ul li a:hover {background: none;color: #b5a16c}
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+/*news*/
+.news-box{top:-17%;}
+
+/*newpro recommend*/
+#grid-S figure.effect-bubba h2{  padding-top: 22%;   font-size: 120%;}
+#grid-S figure.effect-bubba:hover h2{}
+
+#grid-S figure.effect-bubba p{ width:90%; margin:auto; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+
+.special-word{ padding:6%;}
+.special-word h2{ font-size:210%; margin-bottom:15px;}
+}
+
+
+/*------------------------所有圖片預設值---------------------------*/
+.logo img{  max-height:65px;width:auto;max-width:100%;}
+
+.texts-a img{ max-height:80px;width:auto;}
+

@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {overflow-x: hidden}
+html,body{height: inherit;}
+
+.sb-slide{ position:relative; z-index:1}
+
+
+.main-contant{ width:100%; margin-left:0;}
+
+.padding{ padding:12% 6%;}
+
+
+/*nav*/
+#smxs-top{background-color:#000; background-repeat:repeat;}
+
+.sb-navbar{ background:rgba(0,0,0,.5)}
+.sb-navbar a.menu-toggle-btn{ text-align:center; display:block; padding:15px;}
+.sb-navbar a.menu-toggle-btn i{ color:#FFF; font-size:25px;
+-webkit-transition: all 0.2s ease-out 0s; -moz-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s;}
+.sb-navbar a.menu-toggle-btn:hover i{ color:#b5a16c;}
+
+.sb-navbar ul{ float:none; text-align:center; background:#000; margin:0; padding:0;}
+.sb-navbar ul li{ float:none; font-size:110%;}
+.sb-navbar ul li+li{border-top:1px solid hsl(0, 0%, 13%)}
+.sb-navbar ul li a{ color:#FFF; padding:15px;}
+.sb-navbar ul li a:hover, .sb-navbar ul li a:focus{ background:#b5a16c}
+
+
+
+/*logo*/
+.smxs-logo{ text-align:center; padding:4%;}
+
+
+/*news*/
+.news-box {top: 0; right: 0; position: relative; width: 100%; background:#000; padding:12% 0;}
+#ad{ width:450px}
+
+ul.pic{ width:1350px;}
+ul.pic li{ width:450px; padding-left:50px; padding-right:50px;}
+
+#ad p{ display:block; padding:10px 20px;}
+#ad p.btn_left{ left:400px}
+
+
+/*newpro recommend*/
+.special-word{ padding-top:0;}
+.special-word:before{ display:block; content:''; border-style:solid; border-color:transparent transparent #efefef transparent;  margin:auto;  position:relative; z-index:1; margin-bottom:6%; margin-top:-40px;width:20px; height:20px;border-width:20px;}
+
+#grid-S figure.effect-bubba h2{ padding-top:30%; font-size:160%;}
+#grid-S figure { min-width: 100%; max-width: none;  max-height: 720px;}
+
+
+/*newpro*/
+#newpro{border-bottom:6px solid #b5a16c;}
+
+
+/*products*/
+.centered-pills ul{ width:100%;}
+.centered-pills ul li{ width:48.5%; text-align:center;	margin:0 0.5%;}
+.centered-pills ul li+li+li{ margin-top:5px;}	
+.centered-pills ul li a{ width:100%;}
+
+.nav-pills > li+li > a { margin-left: 0px;}
+
+
+/*services*/
+#services{ padding-left:0; padding-right:0;}
+#services2, #services3{ margin-top:15px;}
+
+.icon-box{ padding:10%;}
+
+
+/*contact*/
+#contact-box{ padding:8% 5%;}
+
+
+
+/*footer*/
+.footer-icon{ width:100%; padding-left:15px; padding-right:15px; margin-bottom:15px; margin-top:10px;}
+.footer-icon ul{ text-align: center;}
+
+.company-name { margin-bottom: 15px;}
+
+#copyright-box{ width:100%; text-align:center;}
+#copyright-box ul li{ width:49%; border:1px solid rgba(255,255,255,.1); padding:3px;}
+#copyright-box ul li+li { margin-left: 0;}
+#copyright-box ul li+li+li{ margin-top:5px;}
+#copyright-box ul li a{ padding:3px;}
+
+/*
+.grid figure {
+	display: inline-block;
+	float: none;
+	margin: 10px auto;
+	width: 100%;
+}
+
+
+/*------------------------所有圖片預設值---------------------------*/
+.smxs-logo img{max-height:50px;}
+
+
+/*--------------------------------尺寸微調--------*/
+@media screen and (max-width: 480px) {
+
+.padding{ padding:15% 6%;}
+
+
+/*logo*/
+.smxs-logo{ padding:20px;}
+
+/*news*/
+#ad{ width:300px}
+
+ul.pic{ width:1200px;}
+ul.pic li{ width:300px; padding-left:0px; padding-right:0px;}
+ul.pic li span{ margin-left:5%; margin-right:5%;}
+
+#ad p{ display:none;}
+
+/*news*/
+.news-box{ padding:15% 0;}
+
+
+/*newpro recommend*/
+figure.effect-bubba p{ display:none}	
+figure.effect-bubba h2, #grid-S figure.effect-bubba h2{ padding-top:25%}
+
+.special-word{ padding:0 6% 12%;}
+.special-word:before{ margin-bottom:12%;}
+.special-word p{ padding-left:55px;}
+.special-word p:before{ width:40px;}
+
+
+/*contact*/
+#contact ul li:first-child{ font-size:180%; margin-bottom:20px;}
+#contact ul li:first-child i{ font-size:18px;}
+#contact ul li{ font-size:120%;}
+
+.btn-primary { text-transform:inherit;font-size: 120%;}
+
+.modal-content .modal-header, .modal-content .modal-body{ padding:30px 15px;}
+.modal-content .modal-header .modal-title{ font-size:120%; width:80%; margin:auto;}
+.modal-content label{ font-size:100%;}
+
+.btn-default{ width:100%;}
+}

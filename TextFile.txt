@@ -1,0 +1,197 @@
+﻿<div id="services" class="padding row">
+    <div class="col-xs-12">
+        <h2>Assurance Services</h2>
+    </div>
+    
+    <div id="services1" class="col-sm-4 col-xs-12">
+            <div class="services-box">
+                <div class="icon-box">
+                    <div class="square_coner">
+                       <span class="texts-a"><img src="images/services/01.png"></span>
+                    </div>                          
+                   Fast &amp; Free Delivery
+                </div><!--/icon-box-->
+                <div class="hover-box">
+                    <div class="inner-hover-box">								
+                        <p>We provide you with fast and free delivery regardless of the product size and value. Your order will be delivered in time and for free to your home or office.</p>
+                    </div>
+                </div><!--/hover-box-->
+            </div><!--/service-box-->
+    </div><!--/service1-->
+    
+
+    <div id="services2" class="col-sm-4 col-xs-12">
+            <div class="services-box">
+                <div class="icon-box">
+                    <div class="square_coner">
+                       <span class="texts-a"><img src="images/services/02.png"></span>
+                    </div>                          
+                   Safe &amp; Secure Payments
+                </div><!--/icon-box-->
+                <div class="hover-box">
+                    <div class="inner-hover-box">								
+                        <p>We are committed to increase the safety and security of your payments. Helping you shop more safely and take control over your money.</p>
+                    </div>
+                </div><!--/hover-box-->
+            </div><!--/service-box-->
+    </div><!--/service2-->
+
+    <div id="services3" class="col-sm-4 col-xs-12">
+            <div class="services-box">
+                <div class="icon-box">
+                    <div class="square_coner">
+                       <span class="texts-a"><img src="images/services/03.png"></span>
+                    </div>                          
+                   100% Money Back Quarantee
+                </div><!--/icon-box-->
+                <div class="hover-box">
+                    <div class="inner-hover-box">								
+                        <p>We offer 100% money-back guarantee within 60 days of payment. If you are not satisfied for any reason with the final product, you may return your purchase.</p>
+                    </div>
+                </div><!--/hover-box-->
+            </div><!--/service-box-->
+    </div><!--/service3-->
+
+
+</div>
+<!--/services-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================
+
+    	<div id="contact-box">
+            <ul>
+                <li><i class="fa fa-fw fa-phone"></i>+000-0-0000000</li>
+                <li><i class="fa fa-fw fa-clock-o"></i>7 Days a week from 11:00 am to 10:00 pm</li>
+                <li><i class="fa fa-fw fa-map-marker"></i><a href="https://www.google.com.tw/maps/place/320%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E7%92%B0%E5%8C%97%E8%B7%AF400%E8%99%9F/@24.9656719,121.2265463,17z/data=!3m1!4b1!4m2!3m1!1s0x3468223046112da9:0x644176c3a990e600" target="_blank">00A.-0, No.000, Abcdefg Rd., Abcfght Dist., Hjkugtf City 000, Abc</a></li>
+                <li><i class="fa fa-fw fa-envelope"></i>demo@demo.com</li>
+            </ul>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              <i class="fa fa-pencil"></i> Contact Us
+            </button>
+        </div><!--/contact-box-->
+==================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="contact" class="row" style="background-image:url(images/bg.png)">
+	    
+    <div class="padding">
+            
+        <h2>Contact Us</h2>
+
+
+        <div id="contact-box" style="background-image:url(images/contactus.jpg)" >
+
+        <table cellpadding="0" cellspacing="0" style="width: 80%;text-align: center;margin: 0 auto; ">
+            <tbody>
+            <tr>
+                <td style="width: 70%; vertical-align: top;">
+                    <table style="padding: 0; margin: 0; width: 90%; text-align: left;" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td colspan="5" style="height: 10px;  ">
+                            </td>
+                        </tr>
+                        <tr style="padding: 0; margin: 0; text-align: left; text-decoration:underline; font-size: 27px; color: NAVY;">
+                            <td style="height: 30px; width: 300px; font-family: 'TrajanProRegular';  ">
+                                <b>
+                                    <!--<img id="imgleft" src="" alt="Taipei" style="vertical-align: middle;
+                                        height: 25px; width: 25px; font-family: 'TrajanProRegular';">-->
+                                        <span style="margin-left: 30px;" > &nbsp;Taipei:&nbsp; </span></b>
+                            </td>
+                            <td style="width: 10px; height: 18px; ">
+                            </td>
+                            <td style="height: 18px; width: 300px; font-family: 'TrajanProRegular';">
+                                <b>
+                                    <!--<img id="img1" src="Images/indianflag.jpg" alt="Shanghai" style="vertical-align: middle;
+                                        height: 25px; width: 25px;">-->
+                                         
+                                        <span style="margin-left: 30px;" > &nbsp;Shanghai:&nbsp; </span></b>
+                            </td>
+                              <td style="width: 10px; height: 18px;">
+                            </td>
+                            <td style="height: 18px; width: 300px; font-family: 'TrajanProRegular';">
+                                <b>
+                                    <!--<img id="img2" src="Images/indianflag.jpg" alt="Myanmar:" style="vertical-align: middle;
+                                        height: 25px; width: 25px;">-->
+                                        <span style="margin-left: 30px;" > &nbsp;Myanmar:&nbsp; </span></b>
+                            </td>
+                        </tr>
+                        <tbody><tr>
+                            <td colspan="5" style="height: 10px;  ">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 18px; text-align: left">
+                            <td style="color: #012652; padding-top: 2px; padding-bottom: 5px;">
+                                <div style="margin-left: 30px; font-family: 'TrajanProRegular'; font-size: 18px;
+                                    line-height: 18px;">
+                                    T:+886 2 2731 0992,<br>
+                                    F:+886 2 2731 2010,<br>
+                                    13F,No.248,sec.3 Nanjing E.Rd.Songshan Dist.,<br>
+                                    Taipei, Taiwan.<br>
+                                </div>
+                            </td>
+                            <td style="width: 50px;">
+                            </td>
+                            <td style="color: #012652; padding-top: 2px; padding-bottom: 5px; vertical-align: top">
+                                <div style="margin-left: 30px; font-family: 'TrajanProRegular'; font-size: 18px;
+                                    line-height: 18px;">                                     
+                                    T:+86 21 6289 8581,<br>
+                                    F:+86 21 6289 8582,<br>
+                                    East Office Tower,<br />
+                                    China,200040<br>
+                                </div>
+                            </td>
+                              <td style="width: 50px;">
+                            </td>
+                            <td style="color: #012652; padding-top: 2px; padding-bottom: 5px; vertical-align: top">
+                                <div style="margin-left: 30px; font-family: 'TrajanProRegular'; font-size: 18px;
+                                    line-height: 18px;">
+                                    224a,7f,Uwisara Rd,<br>
+                                    Bahan Township,<br />
+                                    Yangon, Myanmar
+                                    <br>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        
+        </div>
+    </div>
+</div><!--/contact-->
+
+
+

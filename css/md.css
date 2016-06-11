@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*news*/
+.news-box { top: -20%;}
+
+
+/*newpro recommend*/
+figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after{ top:20px; right:20px; bottom:20px; left:20px;}
+.grid figure figcaption{ padding:1.5em;}
+
+#grid-S figure.effect-bubba:hover h2{-webkit-transform: translate3d(0,-10px,0);}
+#grid-S figure.effect-bubba p{ display:none;}
+
+.special-word { padding: 5%;}
+.special-word h2 { font-size: 180%; margin-bottom:10px;}
+.special-word p{ padding-left:60px;}
+.special-word p:before{ width:40px;}
+
+/*services*/
+.icon-box {font-size: 100%;}
+.inner-hover-box p{ line-height:1.4;}
+
+/*footer*/
+.footer-icon{ width:40%; padding-left:15px;}
+.footer-icon ul{ text-align:left;}
+
+#copyright-box{ width:60%;}
+
+/*------------------------所有圖片預設值---------------------------*/
+.logo img{max-height:50px;}
