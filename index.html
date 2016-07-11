@@ -16,7 +16,10 @@
   <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Vidaloka|Crimson+Text:400,600,600italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vidaloka|Crimson+Text:100,400,600,600italic' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="zoomsliedr/demo.css" />
   <script type="text/javascript" src="zoomsliedr/modernizr.custom.86080.js"></script>
@@ -29,7 +32,7 @@
 
   <style>
    .main-content {
-     font-family: 'Open Sans', serif;
+     font-family: 'Raleway', sans-serif;
      padding-top: 5%;
      margin: 0 auto;
      max-width: auto;
@@ -122,52 +125,96 @@
   <div id="all" class="sb-slide">
 
 
-   <div id="nav" class="hidden-sm hidden-xs">
-    <div class="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+<!-- <div id="nav" class="hidden-sm hidden-xs">
+  <div class="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
 
     <div id='cssmenu'>
       <ul>
-       <li class='active'><a href="index.html"  ><span>Home</span></a></li>
-       <li><a href="#about" ><span>About Us</span></a></li>
+        <li class='active'><a href="index.html"  ><span>Home</span></a></li>
+        <li><a href="#about" ><span>About Us</span></a></li>
 
-       <li class='has-sub'><a href='#Gemstones_Main' ><span>Gemstones From Myanmar</span></a>
-        <ul>
-         <li ><a href='#Gemstones_rub' ><span>Origin of ruby</span></a>
-         </li>
-         <li class='last'><a href='#Gemstones_sap' ><span>Color of sapphire</span></a>
-         </li>
-       </ul>
-     </li>
-     <li><a href='#products' ><span>Products</span></a></li>
-     <li><a href='#services' ><span>Services</span></a></li>
-     <li class='last'><a href='#contact' ><span>Contact Us</span></a></li>
-   </ul>
- </div>
-</div>
+        <li class='has-sub'><a href='#Gemstones_Main' ><span>Gemstones From Myanmar</span></a>
+          <ul>
+            <li ><a href='#Gemstones_rub' ><span>Origin of ruby</span></a>
+            </li>
+            <li class='last'><a href='#Gemstones_sap' ><span>Color of sapphire</span></a>
+            </li>
+          </ul>
+        </li>
+        <li><a href='#products' ><span>Products</span></a></li>
+        <li><a href='#services' ><span>Services</span></a></li>
+        <li class='last'><a href='#contact' ><span>Contact Us</span></a></li>
+      </ul>
+  </div>
+</div> -->
 
-<!--height:835px;-->
 <style>
-  .sliderhome
-  {
-    height: 835px;
-    width: 100%;
-    background-image: url(images/493610347.jpg);
-    background-repeat: no-repeat;
-    background-size: 80%;
-  }
+.sb-slide {
+  height: 100%;
+}
+.sliderhome {
+  height: 100%;
+}
 
-  @media screen and (max-width: 980px)
-  {
-    .sliderhome
-    {
-      height: 435px;
-      width: 100%;
-      background-image: url(images/493610347.jpg);
-      background-repeat: no-repeat;
-      background-size: 80%;
-    }
-  }
+.header-navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#header-nav {
+  position: absolute;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.max-width-auto {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-logo img {
+  width: 150px;
+  height: 112.5px;
+}
+
+#header-nav-fixed {
+  position: fixed;
+  z-index: 60;
+  color: white;
+  text-align: center;
+  /*background: #fff;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#header-nav-fixed #nav-logo img {
+  width: 80px;
+  height: 60px;
+}
+
 </style>
+
+<header id="header-nav" class="header-navbar">
+  <div class="max-width-auto">
+    <a href="" id="nav-logo">
+      <img src="images/logo.png" alt="">
+    </a>
+  </div>
+</header>
+
+<header id="header-nav-fixed" class="header-navbar">
+  <div class="max-width-auto">
+    <a href="" id="nav-logo">
+      <img src="images/logo.png" alt="">
+    </a>
+  </div>
+</header>
+
+
 <div class="sliderhome">
 
   <ul class="cb-slideshow">
@@ -181,7 +228,6 @@
 
 </div>
 
-
 <script type="text/javascript">
 
  var x = screen.height;
@@ -191,40 +237,29 @@
 </script>
 
 
-<div class="main-contant container-fluid">
+<div class="main-content container-fluid">
 
-<!--<div class="row">
-    <div class="news-box">
-        <h2>JM News</h2>
-        <div id="ad">
-            <p class="btn_left"><img src="images/arrow_right.png"></p>
-            <p class="btn_right"><img src="images/arrow_left.png"></p>
-            <ul class="pic">
-                <li><span>Royal Blue Sapphire<br/>2016 FW Ring view</span><img src="images/home1.jpg"></li>
-                <li><span>Royal Blue Sapphire<br/>2016 FW Ring view</span><img src="images/home3.jpg"></li>
-                <li><span>Royal Blue Sapphire<br/>2016 FW Ring view</span><img src="images/home4.jpg"></li>
-                <li><span>Royal Blue Sapphire<br/>2016 FW Ring view</span><img src="images/home5.jpg"></li>
-            </ul>
-    	</div>
+  <div id="about" class="row" >
+    <div class="col-xs-12 padding">
+       <div class="heading-center">
+         <h2>About us</h2>
+         <p>We Supply Burmese Natural Untreated Rubies &amp; Sapphires</p>
+       </div>
+
+      <div class="sub-content">
+        <div class="two-column">
+          <p>Jewelry Management was founded in 2014 as a merger between two families whose love for collecting jewelry helped tie the knot. For the past 30 years, both families have been avid collectors and dealers of the finest and most valuable gems in the world.</p>
+          <p>Today, Jewelry Management stands on the simple principle of quality first. Over the years, our quality first concept has helped us cut, polish, set, and sold many important pieces of jewelry to prominent Asian collectors including many pieces who have ended up in international auctions such as Sotheby’s and Christies.</p>
+        </div>
+        <div class="two-column">
+          <p>We know that high end collectors care most about each gem’s real value, and whether each gem’s value will be able to stand the test of time and appreciate. Because only gems of the highest quality will be able to stand the test of time and appreciate,Gems chosen under our strict quality first guidelines will never have a problem finding a home.</p>
+          <p>At Jewelry Management, our mission is to inspire more people to collect jewelry.
+          We aim to provide the knowledge and confidence collectors desire to begin collecting the finest gems in the world.</p>
+        </div>
+      </div>
+
     </div>
-</div>
--->
-
-<div id="about" class="row" >
-  <div class="col-xs-12 padding">
-   <h2>About us</h2>
-
-   <p style="text-align:left" >
-    <span style="font-size:22px;font-weight:bold; " >JM –We Supply Burmese Natural Untreated Rubies & Sapphires </span> <br /><br />
-    Jewelry Management was founded in 2014 as a merger between two families whose love for collecting jewelry helped tie the knot. For the past 30 years, both families have been avid collectors and dealers of the finest and most valuable gems in the world.
-    <br /><br />
-    Today, Jewelry Management stands on the simple principle of quality first. Over the years, our quality first concept has helped us cut, polish, set, and sold many important pieces of jewelry to prominent Asian collectors including many pieces who have ended up in international auctions such as Sotheby’s and Christies. We know that high end collectors care most about each gem’s real value, and whether each gem’s value will be able to stand the test of time and appreciate. Because only gems of the highest quality will be able to stand the test of time and appreciate,Gems chosen under our strict quality first guidelines will never have a problem finding a home.
-    <br /><br />
-    At Jewelry Management, our mission is to inspire more people to collect jewelry.
-    We aim to provide the knowledge and confidence collectors desire to begin collecting the finest gems in the world.
-  </p>
-</div>
-</div><!--/about-->
+  </div><!--/about-->
 
 
 <div id="Gemstones_Main" class="row">
@@ -232,11 +267,12 @@
   <div class="col-xs-12 padding">
 
 
-    <h2>Gemstones from Myanmar (Burma):</h2>
+    <div class="heading-center">
+      <h2>Gemstones</h2>
+      <p>From Myanmar (Burma)</p>
+    </div>
 
     <p style="text-align:left" >
-      <br /><br />
-      <span style="font-size:22px;font-weight:bold; " >Gemstones from Myanmar (Burma):</span><br /><br />
       For many centuriessome of the most important colored gems in the world have been mined in Burma (Myanmar). Currently the most prestigious origin for Rubies, Sapphires and Jadeite, the land also produces other high quality gems such as Spinel, Peridot, Tourmaline, Moonstone and more than 50 other gemstones.
 
     </p>
