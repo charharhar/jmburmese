@@ -50,6 +50,7 @@ h2 {
 .heading-center {
   max-width: 575px;
   margin: 0 auto 30px;
+  text-align: center;
 }
 
 .heading-center p {
@@ -78,14 +79,32 @@ h2 {
 
 
 /*--------------------------------main-contant--------*/
+
 .main-content {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  background: #FFEAB2;
   position: relative;
+  font-family: 'Raleway', sans-serif;
   z-index: 50;
-  margin-top: -6px;
+}
+
+.main-content--max-width {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #FFEAB2;
+  padding-top: 5%;
+  border: 15px solid #6c7eb5;
+  border-bottom: none;
+}
+
+.bottom-content {
+  border-top: none;
+  border-bottom: 15px solid #6c7eb5;
+  margin-bottom: 60px;
+}
+
+.main-content--full-width {
+  width: 100%;
+  background: #000;
 }
 
 .sub-content {
@@ -99,8 +118,14 @@ h2 {
   font-size: 14px;
 }
 
-.sub-content .two-column {
-  padding: 0 60px;
+.sub-content .two-column:nth-of-type(1) {
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.sub-content .two-column:nth-of-type(2) {
+  padding-left: 30px;
+  padding-right: 60px;
 }
 
 .two-column {
@@ -109,6 +134,140 @@ h2 {
 }
 
 .padding{ padding: 60px;}
+
+.main-content--full-width .heading-center {
+  color: #b5a16c;
+}
+
+.main-content--full-width .special-word {
+  color: #C0C0C0;
+}
+
+.main-content--full-width .special-word p {
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.three-column {
+  text-align: center;
+}
+
+.service-column {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.service-column p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* HAMBURGER ICON */
+
+#hamburger-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hamburger-icon {
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 25px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #b5a16c;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3) {
+  top: 7px;
+}
+
+#hamburger-icon span:nth-child(4) {
+  top: 14px;
+}
+
+#hamburger-icon.open span:nth-child(1) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger-icon.open span:nth-child(4) {
+  top: 7px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*news*/
@@ -127,34 +286,6 @@ ul.pic li img{	margin:0 auto; max-width:90%}
 ul.page{margin: 0 auto;padding-top: 20px;}
 
 
-/*about*/
-#about{ text-align:center;}
-#about .padding{}
-
-#Gemstones_Main{ text-align:center;}
-#Gemstones_Main .padding{}
-
-
-#Gemstones_rub{ text-align:center;}
-#Gemstones_rub .padding{}
-#Gemstones_rub h2{ margin:0 0 30px;}
-#Gemstones_rub h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
-
-#Gemstones_sap { text-align:center;}
-#Gemstones_sap .padding{}
-#Gemstones_sap h2{ margin:0 0 30px;}
-#Gemstones_sap h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
-
-#services { text-align:center;}
-#services .padding{}
-#services h2{ margin:0 0 30px;}
-#services h2:after{ display:block; content:""; background:#b5a16c; width:500px; height:2px; margin:30px auto 0;}
-
-#contact { text-align:center;}
-#contact .padding{}
-#contact h2{ margin:0 0 30px;}
-#contact h2:after{ display:block; content:""; background:#b5a16c; width:500px; height:2px; margin:30px auto 0;}
-
 
 /*.special*/
 .special{ background:#000;}
@@ -164,7 +295,7 @@ ul.page{margin: 0 auto;padding-top: 20px;}
 .special-word{ padding:8%;}
 .special-word h2{ margin:0 0 30px; font-size:220%;}
 .special-word h2 span{ font-weight:bold;}
-.special-word p{ margin:0; font-style:italic; position:relative; padding-left:80px;}
+.special-word p{ margin:0; position:relative; padding-left:80px;}
 .special-word p:before{ position:absolute; left:0; top:0; display:block; content:""; background:#b5a16c; width:60px; height:2px; margin-top:5px;}
 
 #grid-S figure.effect-bubba h2
@@ -347,17 +478,13 @@ figure.effect-bubba:hover p {
 
 
 /*newpro*/
-#newpro{/* margin-bottom:30px;*/ border-bottom:3px solid #b5a16c;}
-
-
+#newpro{ padding-bottom:60px; border-bottom:3px solid #b5a16c;}
 /*recommend*/
-#recommend{}
+#recommend{ padding-bottom: 60px; }
 
 
 /*products*/
-#products{ padding-left:0; padding-right:0; text-align:center;}
-#products h2{ margin:0 0 30px;}
-#products h2:after{ display:block; content:""; background:#b5a16c; width:600px; height:2px; margin:30px auto 0;}
+#products{ padding-left:15px; padding-right:15px; text-align:center;}
 
 .centered-pills {
 	text-align: center
@@ -379,10 +506,19 @@ figure.effect-bubba:hover p {
 
 }
 .nav-pills > li+li > a{margin-left: 20px}
-.nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li > a.active {
-	background: #b5a16c;
-	border-color: #b5a16c;
-	color: #fff
+.nav-pills > li > a:focus,
+.nav-pills > li > a.active {
+  border: none;
+  background: #FFEAB2;
+  color: #000;
+  font-size: 60px;
+}
+.nav-pills > li > a.insta:hover {
+  color: #125688;
+}
+
+.nav-pills > li > a.wechat:hover {
+  color: #7bb32e;
 }
 
 .products-box{ padding-left:0; padding-right:0;}
@@ -432,8 +568,6 @@ figcaption h3 {
 
 
 /*service*/
-#services{ background:#111; color:#FFF; text-align:center;}
-#services h2{ margin:0 0 30px;}
 
 .services-box{ position:relative;}
 
@@ -488,7 +622,6 @@ figcaption h3 {
 
 
 /*contact*/
-#contact{ background-repeat:no-repeat; background-position:center;background-size:cover; color:#FFF;}
 #contact .padding{ background:rgba(0,0,0,.5); text-align:center;}
 
 #contact-box{ margin:15px; padding:5%; border:2px solid #FFF;}
@@ -528,12 +661,11 @@ figcaption h3 {
 
 
 /*--------------------------------footer--------*/
-footer{ background-color:#000; position:relative; z-index:50; padding-top:15px; padding-bottom:15px;}
-
+footer{ height: 450px; background-color:#000; position:relative; z-index:50;}
 
 
 /*---------------------------分享連結---------------------------*/
-.footer-icon{ margin-top:12px; width:17%; padding-left:0; padding-right:0;}
+.footer-icon{ margin-top:12px; width:100%; padding-left:0; padding-right:0;}
 .footer-icon ul{ text-align:center;
 	padding:0;
 	margin:0;
@@ -552,26 +684,25 @@ footer{ background-color:#000; position:relative; z-index:50; padding-top:15px; 
 	line-height:36px;
 	font-size:20px;
 	text-align:center;
-		border-radius:100%;transition:all 0.8s ease-in-out;
+		border-radius:100%;transition:all 0.4s ease-in-out;
 }
 
-.footer-icon ul li a .fa-facebook:hover, .footer-icon ul li a .fa-facebook:focus {background:#3c5a9a; color:#FFF}
-.footer-icon ul li a .fa-google-plus:hover ,.footer-icon ul li a .fa-google-plus:focus {background:#df4b38; color:#FFF}
-.footer-icon ul li a .fa-youtube-play:hover, .footer-icon ul li a .fa-youtube-play:focus {background:#e01a2b; color:#FFF}
-.footer-icon ul li a .fa-instagram:hover, .footer-icon ul li a .fa-instagram:focus{background:#6a453b; color:#FFF}
+.footer-icon ul li a .fa-facebook:hover, .footer-icon ul li a .fa-facebook:focus {background:#3b5998; color:#FFF}
+.footer-icon ul li a .fa-google-plus:hover ,.footer-icon ul li a .fa-google-plus:focus {background:#dd4b39; color:#FFF}
+.footer-icon ul li a .fa-youtube-play:hover, .footer-icon ul li a .fa-youtube-play:focus {background:#bb0000; color:#FFF}
+.footer-icon ul li a .fa-instagram:hover, .footer-icon ul li a .fa-instagram:focus{background:#125688; color:#FFF}
 /*--------------------------- 分享連結 end---------------------------*/
 
 
-#copyright-box{ text-align:right; color:rgba(255,255,255,0.4); width:83%;}
-#copyright-box a{color:rgba(255,255,255,0.4);}
+#copyright-box{ color:rgba(255,255,255,0.4); width: 100%; text-align: center; margin: 20px 0;}
+#copyright-box a { color: #b5a16c; font-weight: 600; }
 
-.company-name{ margin-bottom:5px;}
+.company-name{ font-weight: 600; color:#b5a16c; margin-bottom:5px;}
 
 #copyright-box ul{margin:0; padding:0;}
 #copyright-box ul li { margin:0; padding:0;display: inline-block}
 #copyright-box ul li+li{ margin-left:1%}
 #copyright-box ul li a {padding: 0; display:inline;color: rgba(255,255,255,0.4)}
-#copyright-box ul li a:hover {background: none;color: #b5a16c}
 
 
 

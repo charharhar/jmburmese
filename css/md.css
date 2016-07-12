@@ -21,11 +21,5 @@ figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after{ t
 .icon-box {font-size: 100%;}
 .inner-hover-box p{ line-height:1.4;}
 
-/*footer*/
-.footer-icon{ width:40%; padding-left:15px;}
-.footer-icon ul{ text-align:left;}
-
-#copyright-box{ width:60%;}
-
 /*------------------------所有圖片預設值---------------------------*/
 .logo img{max-height:50px;}

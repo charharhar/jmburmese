@@ -7,8 +7,6 @@ html,body{height: inherit;}
 .sb-slide{ position:relative; z-index:1}
 
 
-.main-contant{ width:100%; margin-left:0;}
-
 /*nav*/
 #smxs-top{background-color:#000; background-repeat:repeat;}
 
@@ -57,14 +55,6 @@ ul.pic li{ width:600px; padding-left:50px; padding-right:50px;}
 
 /*contact*/
 #contact-box{ padding:8% 5%;}
-
-
-/*footer*/
-.footer-icon{ width:40%; padding-left:15px;}
-.footer-icon ul{ text-align:left;}
-
-#copyright-box{ width:60%;}
-
 
 
 

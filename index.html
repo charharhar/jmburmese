@@ -31,44 +31,39 @@
   <script src="script.js"></script>
 
   <style>
-   .main-content {
-     font-family: 'Raleway', sans-serif;
-     padding-top: 5%;
-     margin: 0 auto;
-     max-width: auto;
-   }
 
-   #photos {
-     margin: 0 auto;
-     max-width: 100%;
-     position: relative;
-   }
 
-   #photos a {
-     margin: 0 auto;
-     padding: 0;
-     text-decoration: none;
-   }
+  #photos {
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+  }
 
-   #photos img {
-     position: relative;
-     float: left;
-     width: 100%;
-   }
+  #photos a {
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+  }
 
-   #photos p {
-     font-family:  Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-     padding-top:150px;
-     position: absolute;
-     max-width: 100%;
+  #photos img {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
 
-     color: #fff;
-     font-size: 25px;
-     text-align: center;
-     width:100%;
-   }
+  #photos p {
+    font-family:  Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    padding-top:150px;
+    position: absolute;
+    max-width: 100%;
 
-   #img91 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    width:100%;
+  }
+
+  #img91 {
     opacity: 0.7;
     filter: alpha(opacity=70); /* For IE8 and earlier */
   }
@@ -171,6 +166,7 @@
 }
 
 .max-width-auto {
+  position: relative;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -186,9 +182,23 @@
   z-index: 60;
   color: white;
   text-align: center;
-  /*background: #fff;*/
+  background: rgba(0, 0, 0, 0.85);
   padding-top: 15px;
   padding-bottom: 15px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px);
+  -webkit-transition: .3s ease-in-out all;
+          transition: .3s ease-in-out all;
+}
+
+.header-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
 }
 
 #header-nav-fixed #nav-logo img {
@@ -196,21 +206,155 @@
   height: 60px;
 }
 
+.header-navbar ul {
+  list-style: none;
+}
+
+.header-navbar ul li {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.header-navbar ul li a {
+  color: #c0c0c0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-navbar ul li a:hover {
+  color: #b5a16c;
+}
+
+.header-navbar ul li.has-sub {
+  padding: 0;
+}
+
+.header-navbar ul li.has-sub li{
+  margin-left: 20px;
+}
+
+.first-nav {
+  margin-top: 40px;
+  opacity: .25;
+  max-width: 300px;
+  transition: .5s ease-in-out all;
+}
+
+.first-nav:hover {
+  opacity: 1;
+}
+
+.hidden-nav-options {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.hidden-nav-options ul {
+  list-style: none;
+}
+
+.hidden-nav-options {
+  text-align: left;
+  padding: 10px 20px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+          transform: translateY(-400px);
+  transition: .3s ease-in-out all;
+}
+
+.nav-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.lang-icon {
+  float: right;
+}
+
+.lang-nav {
+  float: right;
+}
+
 </style>
 
 <header id="header-nav" class="header-navbar">
   <div class="max-width-auto">
-    <a href="" id="nav-logo">
+    <a href="index.html" id="nav-logo">
       <img src="images/logo.png" alt="">
     </a>
+
+    <div class="lang-nav">
+      <ul>
+        <li><a>English</a></li>
+        <li><a>Chinese(Simplified)</a></li>
+        <li><a>Chinese(Traditional)</a></li>
+      </ul>
+    </div>
+
+    <ul class="first-nav">
+      <li><a href="#about"><span>About Us</span></a></li>
+
+      <li class="has-sub"><a href="#Gemstones_Main"><span>Gemstones From Myanmar</span></a>
+        <ul>
+          <li><a href="#Gemstones_rub" ><span>Origins of ruby</span></a>
+          </li>
+          <li class="last"><a href="#Gemstones_sap" ><span>Colors of sapphire</span></a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#products" ><span>Products</span></a></li>
+      <li><a href="#services" ><span>Services</span></a></li>
+      <li class="last"><a href="#contact" ><span>Contact Us</span></a></li>
+    </ul>
+
   </div>
 </header>
 
 <header id="header-nav-fixed" class="header-navbar">
   <div class="max-width-auto">
-    <a href="" id="nav-logo">
+    <a href="index.html" id="nav-logo">
       <img src="images/logo.png" alt="">
     </a>
+
+    <div id="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="hidden-nav-options">
+      <ul>
+        <li><a href="#about"><span>About Us</span></a></li>
+
+        <li class="has-sub"><a href="#Gemstones_Main"><span>Gemstones From Myanmar</span></a>
+          <ul>
+            <li><a href="#Gemstones_rub" ><span>Origins of ruby</span></a>
+            </li>
+            <li class="last"><a href="#Gemstones_sap" ><span>Colors of sapphire</span></a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#products" ><span>Products</span></a></li>
+        <li><a href="#services" ><span>Services</span></a></li>
+        <li class="last"><a href="#contact" ><span>Contact Us</span></a></li>
+      </ul>
+    </div>
+<!--
+    <div class="lang-icon">
+      <ul>
+        <li><a>English</a></li>
+        <li><a>Chinese(Simplified)</a></li>
+        <li><a>Chinese(Traditional)</a></li>
+      </ul>
+    </div> -->
   </div>
 </header>
 
@@ -237,7 +381,7 @@
 </script>
 
 
-<div class="main-content container-fluid">
+<div class="main-content main-content--max-width container-fluid">
 
   <div id="about" class="row" >
     <div class="col-xs-12 padding">
@@ -262,228 +406,174 @@
   </div><!--/about-->
 
 
-<div id="Gemstones_Main" class="row">
+  <div id="Gemstones_Main" class="row">
+    <div class="col-xs-12 padding">
+      <div class="heading-center">
+        <h2>Gemstones</h2>
+        <p>From Myanmar (Burma)</p>
+      </div>
 
-  <div class="col-xs-12 padding">
+      <div class="sub-content">
+        <div class="two-column">
+          <p>For many centuriessome of the most important colored gems in the world have been mined in Burma (Myanmar). Currently the most prestigious origin for Rubies, Sapphires and Jadeite, the land also produces other high quality gems such as Spinel, Peridot, Tourmaline, Moonstone and more than 50 other gemstones.</p>
+          <p>Most rubies and sapphires (around 85%) on the market have been through a process Heat Treatment or Clarity Enchancement. This process improves a stone’s presentation from color to clarity. By treating the gem with highheat, one of the major components in a gemstones growth cycle, the clarity inclusions within the gem will begin to heal and the colors will become more pronounced.</p>
+        </div>
+        <div class="two-column">
+          <p>However, at JM, we believe that heat treated robs a gem of its natural value. Therefore, we insist on selecting only the finest natural non heated gems. Only the best of the best untreated gemstones will stand the test of history and increase in value over time.</p>
+        </div>
+      </div>
+    </div>
+  </div><!--/Gemstones_Main-->
+
+</div> <!-- main-content max-width -->
 
 
-    <div class="heading-center">
-      <h2>Gemstones</h2>
-      <p>From Myanmar (Burma)</p>
+
+
+
+
+
+<div class="main-content main-content--full-width">
+
+  <div id="Gemstones_rub" class="row">
+
+    <div class="col-xs-12 padding">
+      <div class="heading-center">
+        <h2>Ruby</h2>
+        <p>The most important origin</p>
+      </div>
+    </div>
+  </div><!--/RUBY-->
+
+
+  <div id="newpro" class="row special">
+  	<div class="col-md-6 col-md-push-6 special-box">
+  		<div id="grid-B" class="grid">
+  			<figure class="effect-bubba">
+  				<img src="images/home1.jpg"/>
+  				<figcaption>
+  					<h2>JM</h2>
+  					<p>The most important origin of Ruby</p>
+  					<a href="images/newpro/03.jpg" class="flipLightBox">View more</a>
+  				</figcaption>
+  			</figure>
+  		</div><!--/grid-->
     </div>
 
-    <p style="text-align:left" >
-      For many centuriessome of the most important colored gems in the world have been mined in Burma (Myanmar). Currently the most prestigious origin for Rubies, Sapphires and Jadeite, the land also produces other high quality gems such as Spinel, Peridot, Tourmaline, Moonstone and more than 50 other gemstones.
+    <div class="col-md-6 col-md-pull-6 special-box">
 
-    </p>
+      <div id="grid-S" class="grid">
+        <figure class="effect-bubba">
+          <img src="images/home3.jpg"/>
+          <figcaption>
+            <h2>JM</h2>
+            <p>GemstonesThe most important origin of Ruby</p>
+            <a href="images/home3.jpg" class="flipLightBox">View more</a>
+          </figcaption>
+        </figure>
+        <figure class="effect-bubba">
+          <img src="images/home4.jpg"/>
+          <figcaption>
+            <h2>JM</h2>
+            <p>The most important origin of Ruby</p>
+            <a href="images/home4.jpg" class="flipLightBox">View more</a>
+          </figcaption>
+        </figure>
+        <div class="clearfix"></div>
+      </div><!--/grid-->
 
+      <div class="special-word">
+        <h2><span>The most important origin of Ruby</span></h2>
+        <p>Burmese Rubies are famous worldwide for their exceptional coloring, deep blood red with a slightly bluish hue, which also known as “Pigeon Blood” red. While most rubies on the market from Africa or Thailand are brownish and dark, the high fluorescence and intense red of Burmese rubies really stands out. However, a Burmese ruby rarely grows pasta few carats, which makes a larger piece of ruby from 4 carats up extra valuable and high quality Burmese ruby over 5 carats nearly extinct in the market.</p>
+      </div><!--newpro-word-->
 
-
-
-    <style>
-      button.accordion {
-        background-color: #DADFE0;
-        color: #444;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 18px;
-        transition: 0.4s;
-      }
-
-      button.accordion.active, button.accordion:hover {
-        background-color: #FFE1AD;
-      }
-
-      div.panel {
-        padding: 0 15px;
-        display: none;
-        background-color: white;
-      }
-
-      div.panel.show {
-        display: block !important;
-      }
-    </style>
-    <br /><br />
-    <button class="accordion">(+) Burmese Natural Untreated Gemstones</button>
-    <div class="panel">
-      <p style="text-align:left" > Most rubies and sapphires (around 85%) on the market have been through a process Heat Treatment or Clarity Enchancement. This process improves a stone’s presentation from color to clarity. By treating the gem with highheat, one of the major components in a gemstones growth cycle, the clarity inclusions within the gem will begin to heal and the colors will become more pronounced.
-        However, at JM, we believe that heat treated robs a gem of its natural value. Therefore, we insist on selecting only the finest natural non heated gems. Only the best of the best untreated gemstones will stand the test of history and increase in value over time.
-      </p>
     </div>
 
+  </div><!--/newpro-->
 
-    <button class="accordion">(+) The most important origin of Ruby</button>
-    <div class="panel">
-      <p style="text-align:left" > Burmese Rubies are famous worldwide for their exceptional coloring, deep blood red with a slightly bluish hue, which also known as “Pigeon Blood” red. While most rubies on the market from Africa or Thailand are brownish and dark, the high fluorescence and intense red of Burmese rubies really stands out. However, a Burmese ruby rarely grows pasta few carats, which makes a larger piece of ruby from 4 carats up extra valuable and high quality Burmese ruby over 5 carats nearly extinct in the market.
-      </p>
+
+  <div id="Gemstones_sap" class="row">
+    <div class="col-xs-12 padding">
+      <div class="heading-center">
+        <h2>Sapphire</h2>
+        <p>The most noble color</p>
+      </div>
+    </div>
+  </div><!--SAPPHIRE-->
+
+
+  <div id="recommend" class="row special">
+
+    <div class="col-md-6 special-box">
+      <div id="grid-B" class="grid">
+        <figure class="effect-bubba">
+          <img src="images/home5.jpg"/>
+          <figcaption>
+            <h2>JM</h2>
+            <p>The most noble color of sapphire</p>
+            <a href="images/home5.jpg" class="flipLightBox2">View more</a>
+          </figcaption>
+        </figure>
+      </div><!--/grid-->
     </div>
 
-    <button class="accordion">(+) The noble color – Royal Blue Sapphire</button>
-    <div class="panel">
-      <p style="text-align:left" > Another famous member from the corundum family will be sapphire. Since the most famous silky corn flower blue sapphire from Kashmir have becomelegend, theRoyal Blue color from Burma is now themainstream color for sapphire collectors. Sapphires from Burma can possess a rich and intense hue that stones from other sources even Kashmir can hardly have, which makes Sapphires from Burma extraordinary and unique.
-      </p>
+    <div class="col-md-6 special-box">
+
+      <div id="grid-S" class="grid">
+        <figure class="effect-bubba">
+          <img src="images/home4.jpg"/>
+          <figcaption>
+            <h2>JM</h2>
+            <p>The most noble color of sapphire</p>
+            <a href="images/home4.jpg" class="flipLightBox2">View more</a>
+          </figcaption>
+        </figure>
+        <figure class="effect-bubba">
+          <img src="images/home3.jpg"/>
+          <figcaption>
+            <h2>JM</h2>
+            <p>The most noble color of sapphire</p>
+            <a href="images/home3.jpg" class="flipLightBox2">View more</a>
+          </figcaption>
+        </figure>
+        <div class="clearfix"></div>
+      </div><!--/grid-->
+
+      <div class="special-word">
+        <h2><span>The noble color – Royal Blue Sapphire</span></h2>
+        <p>Another famous member from the corundum family will be sapphire. Since the most famous silky cornflower blue sapphires from Kashmir have becomelegend, theRoyal Blue color from Burma has now become a new favoritefor sapphire collectors. Sapphires from Burma possess a rich and intense hue that stones from other sources even Kashmir can hardly have, which makes Sapphires from Burma extraordinary and unique. </p>
+      </div><!--newpro-word-->
+
     </div>
 
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function () {
-          this.classList.toggle("active");
-          this.nextElementSibling.classList.toggle("show");
-        }
-      }
-    </script>
-
-  </div>
-</div><!--/Gemstones_Main-->
+  </div><!--/recommend-->
+</div> <!-- main-content full-width -->
 
 
 
 
-
-
-
-
-
-<div id="Gemstones_rub" class="row">
-
-  <div class="col-xs-12 padding">
-
-
-    <h2>The most important origin of ruby</h2>
-
-  </div>
-</div><!--/Gemstones_Main-->
-
-
-<div id="newpro" class="row special">
-	<div class="col-md-6 col-md-push-6 special-box">
-		<div id="grid-B" class="grid">
-			<figure class="effect-bubba">
-				<img src="images/home1.jpg"/>
-				<figcaption>
-					<h2>JM</h2>
-					<p>The most important origin of Ruby</p>
-					<a href="images/newpro/03.jpg" class="flipLightBox">View more</a>
-				</figcaption>
-			</figure>
-		</div><!--/grid-->
-  </div>
-
-  <div class="col-md-6 col-md-pull-6 special-box">
-
-    <div id="grid-S" class="grid">
-     <figure class="effect-bubba">
-      <img src="images/home3.jpg"/>
-      <figcaption>
-       <h2>JM</h2>
-       <p>GemstonesThe most important origin of Ruby</p>
-       <a href="images/home3.jpg" class="flipLightBox">View more</a>
-     </figcaption>
-   </figure>
-   <figure class="effect-bubba">
-    <img src="images/home4.jpg"/>
-    <figcaption>
-     <h2>JM</h2>
-     <p>The most important origin of Ruby</p>
-     <a href="images/home4.jpg" class="flipLightBox">View more</a>
-   </figcaption>
- </figure>
- <div class="clearfix"></div>
-</div><!--/grid-->
-
-<div class="special-word">
- <h2><span>The most important origin of Ruby</span></h2>
- <p>Burmese Rubies are famous worldwide for their exceptional coloring, deep blood red with a slightly bluish hue, which also known as “Pigeon Blood” red. While most rubies on the market from Africa or Thailand are brownish and dark, the high fluorescence and intense red of Burmese rubies really stands out. However, a Burmese ruby rarely grows pasta few carats, which makes a larger piece of ruby from 4 carats up extra valuable and high quality Burmese ruby over 5 carats nearly extinct in the market.</p>
-</div><!--newpro-word-->
-
-</div>
-
-</div><!--/newpro-->
-
-
-
-
-
-
-
-
-
-<div id="Gemstones_sap" class="row">
-  <div class="col-xs-12 padding">
-   <h2>The most noble color of sapphire</h2>
- </div>
-</div><!--/Gemstones_Main-->
-
-
-<div id="recommend" class="row special">
-
-	<div class="col-md-6 special-box">
-		<div id="grid-B" class="grid">
-			<figure class="effect-bubba">
-				<img src="images/home5.jpg"/>
-				<figcaption>
-					<h2>JM</h2>
-					<p>The most noble color of sapphire</p>
-					<a href="images/home5.jpg" class="flipLightBox2">View more</a>
-				</figcaption>
-			</figure>
-		</div><!--/grid-->
-  </div>
-
-  <div class="col-md-6 special-box">
-
-    <div id="grid-S" class="grid">
-     <figure class="effect-bubba">
-      <img src="images/home4.jpg"/>
-      <figcaption>
-       <h2>JM</h2>
-       <p>The most noble color of sapphire</p>
-       <a href="images/home4.jpg" class="flipLightBox2">View more</a>
-     </figcaption>
-   </figure>
-   <figure class="effect-bubba">
-    <img src="images/home3.jpg"/>
-    <figcaption>
-     <h2>JM</h2>
-     <p>The most noble color of sapphire</p>
-     <a href="images/home3.jpg" class="flipLightBox2">View more</a>
-   </figcaption>
- </figure>
- <div class="clearfix"></div>
-</div><!--/grid-->
-
-<div class="special-word">
- <h2><span>The noble color – Royal Blue Sapphire</span></h2>
- <p>Another famous member from the corundum family will be sapphire. Since the most famous silky cornflower blue sapphires from Kashmir have becomelegend, theRoyal Blue color from Burma has now become a new favoritefor sapphire collectors. Sapphires from Burma possess a rich and intense hue that stones from other sources even Kashmir can hardly have, which makes Sapphires from Burma extraordinary and unique. </p>
-</div><!--newpro-word-->
-
-</div>
-
-</div><!--/recommend-->
-
-
+<div class="main-content main-content--max-width bottom-content">
 <div id="products" class="padding row">
   <div class="col-xs-12">
-    <h2>Products</h2>
+    <div class="heading-center">
+      <h2>Products</h2>
+      <p>Visit our online stores directly</p>
+    </div>
   </div>
 
   <div class="col-xs-12">
     <nav class="centered-pills clearfix">
       <ul class="nav nav-pills">
-        <li  ><a href="https://www.instagram.com/henry9844/"" class="filter active" data-filter="all" style = "background-color:white;border:0px; padding-top:25px;padding-right:50px;"  >
-          <img border="0" alt="Products" src="images/IGram.png"  width="130" height="80" style="margin-bottom:7px;" ><br /> <span style="color:Black; font-size:18px; "> Instagram </span>
-        </a></li>
-        <li  ><a href="http://weidian.com/?userid=801304211" class="filter active" data-filter="all" style = "background-color:white;border:0px;"  >
-          <img border="0" alt="Microshop" src="images/microshop.png"  width="150" height="100"><br /><span style="color:Black; font-size:18px; "> Microshop </span>
-        </a></li>
+        <li>
+          <a href="https://www.instagram.com/henry9844/" class="filter active insta" data-filter="all" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weidian.com/?userid=801304211" class="filter active wechat" data-filter="all" target="_blank">
+            <i class="fa fa-weixin" aria-hidden="true"></i>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -562,39 +652,56 @@
 </div><!--/products-->
 
 
+<style>
+  #services ul {
+    list-style: none;
+  }
+
+  #services ul li {
+    margin: 15px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  #services ul li span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+</style>
 
 
-
-<div id="services" class="padding row" style="background-image:url(images/bg.png)">
+<div id="services" class="padding row">
   <div class="col-xs-12">
-    <h2>Services</h2>
+    <div class="heading-center">
+      <h2>Services</h2>
+      <p>We will manage your jewelry needs</p>
+    </div>
   </div>
 
-  <div class="main-content">
-   <section id="photos">
+  <div class="sub-content">
 
-     <img  id="img91" src='images/services.jpg'  style ="background-color: rgb(100, 0, 0);" >
+    <div class="three-column">
+      <div class="service-column">
+        <p>JM is successfully integrated within a large network of international gem miners, cutters, manufacturers, brokers, dealers, auction houses, and collectors. We understand the demands of each member within the chain and therefore are able to provide the most customized service to manage our customer’s jewelry needs.</p>
+      </div>
+      <div class="service-column">
+        <p>JM promotes the collecting of more high end jewelry amongst our customers. We achieve this by providing event management guidance and inventory support. We use our vast network of relations to provide consulting assistance for our customers on how to enter their high end pieces into the right auctions and where to source the best goods at competitive price points. Our goal is to provide the recipe for success to our customers.</p>
+      </div>
+      <div class="service-column">
+        <p>Having lifelong experience in the industry, we understand clearly the different trends and directions of the jewelry industry. We are always up to date on market information and can provide the best suggestions for our customers consulting needs. Whether you are a collector or buying a gem as a gift or for yourself, we will provide the best suggestions to maximize your money spent.</p>
+      </div>
+    </div>
 
-     <p style="height:100%;" >
-      (1) Jewelry Management or consulting services <br><br>
-      (Market news, Store management consulting,<br><br>
-      optimal lighting placement and design,<br><br>
-      product display,jewelry knowledge training courses,<br><br>
-      product sourcing channels and pricing consulting) <br>
-      <br><br>
-      (2) Public Relations event management
-      including inventory support
-      <br>  <br><br>
-      (3) Jewelry design and setting services
-      <br>  <br><br>
-      (4) High end auction consulting services</p>
-      <br>
+    <ul>
+      <li><span>(1)</span><br> Jewelry Management or consulting services (Market news, Store management consulting, optimal lighting placement and design, product display,jewelry knowledge training courses, product sourcing channels and pricing consulting)</li>
+      <li><span>(2)</span><br> Public Relations event management including inventory support</li>
+      <li><span>(3)</span><br> Jewelry design and setting services</li>
+      <li><span>(4)</span><br> High end auction consulting services</li>
+    </ul>
 
-
-    </section>
   </div>
-
-
 
 <!--
 
@@ -614,80 +721,113 @@
     </div>-->
   </div>
 
-  <br><br>
+</div><!-- main-content max-width -->
+
+<style>
+  .contact-us {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #b5a16c;
+    padding: 20px 40px;
+  }
+  .social-copyright {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 20px 40px;
+    background: #b5a16c;
+  }
+
+  .social-overlay {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .contact-block {
+    padding: 20px;
+    border-bottom: 2px solid #b5a16c;
+  }
+
+  .contact-block:last-of-type {
+    border-bottom: none;
+  }
+
+  .contact-block .contact-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-block p {
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    font-size: 12px;
+  }
+
+  .vertical-align {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+  }
+</style>
 
 
-  <div id="contact" class="padding row" style="background-image:url(images/bg.png)">
-    <div class="col-xs-12" style="color:Black;" >
-      <h2>Contact Us</h2>
+<footer>
+
+  <div class="contact-us" id="contact">
+    <div class="contact-block">
+      <p class="contact-header">Taipei</p>
+      <p>13F No. 248 Sec. 3 Nanjing E. Rd. Sonshan Dist. Taipei, Taiwan</p>
+      <p><span>T:</span> +886 2 2731 0992</p>
+      <p><span>F:</span> +886 2 2731 2010</p>
     </div>
-
-
-   <!-- <div class="padding1">
-        <img border="0" alt="Products" src="images/conus.jpg"  width="100%" height="auto" style="text-align:left;" >
-      </div>-->
-
-
-
-
-      <div class="main-content92">
-       <section id="photos92">
-
-         <img  id="img92" src='images/CONTACt.jpg'  style ="background-color: rgb(100, 0, 0);" >
-
-         <p style="height:100%;" >
-
-
-          <span style="font-weight:bold; color:White; text-decoration:underline;  " >Taipei:</span><br /><br />
-          <span>
-            T:+886 2 2731 0992 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  F:+886 2 2731 2010<br />
-            13F,No.248,sec.3 Nanjing E.Rd.Songshan Dist.,Taipei, Taiwan<br />
-          </span>
-
-          <br><br>
-
-          <span style="font-weight:bold; color:White; text-decoration:underline;  " >Shanghai:</span><br /><br />
-          <span>
-            T:+86 21 6289 8581&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     F:+86 21 6289 8582<br /><br />
-            1376 Nanjing W.Rd.,Suite 437,East Office Tower,China200040<br />
-          </span>
-          <br /><br />
-
-          <span style="font-weight:bold; color:White; text-decoration:underline;  " >Myanmar:</span><br /><br />
-          <span>
-            224a,7f,Uwisara Rd,Bahan Township,
-            Yangon Myanmar<br /><br />
-          </span>
-          <br /><br />
-
-          <br>
-        </p>
-
-      </section>
+    <div class="contact-block">
+      <p class="contact-header">Shanghai</p>
+      <p>1376 Nanjin W. Rd. Suite 437 East Office Tower China 200040</p>
+      <p><span>T:</span> +86 21 6289 8581</p>
+      <p><span>F:</span> +86 21 6289 8582</p>
     </div>
-
+    <div class="contact-block">
+      <p class="contact-header">Myanmar</p>
+      <p>224a 7F Uwisara Rd. Bahan Township Yangon, Myanmar</p>
+    </div>
   </div>
 
+  <div class="social-copyright">
+  <div class="social-overlay">
+    <div class="vertical-align">
+      <div class="col-sm-6 footer-icon">
+        <ul>
+          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
 
-</div><!--/main-contant-->
-<footer class="container-fluid">
-  <div class="row">
-
-     <div class="col-sm-6 footer-icon">
-      <ul>
-        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-      </ul>
-    </div>
-
-
-    <div id="copyright-box" class="col-sm-6">
-      <div class="company-name">Copyright © <a href="#" target="_blank">2016 JM. All Rights Reserved.</a></div>
+      <div id="copyright-box" class="col-sm-6">
+        <div class="company-name">Copyright © <a href="#" target="_blank">2016 JM. All Rights Reserved.</a></div>
+      </div>
     </div>
   </div>
+  </div>
+
 </footer>
+
 </div><!--/sb-site-->
 
 
