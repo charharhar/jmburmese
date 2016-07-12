@@ -70,7 +70,7 @@ h2 {
 .navbar-default .navbar-collapse{ padding:0}
 #nav ul{ margin:0; padding:0; list-style:none; text-align:center; float:none;}
 #nav ul li{ float:none; margin-bottom:2px;}
-#nav ul li a{ color:#FFF; display:block; padding:15px 10px; letter-spacing:1px; font-size:120%; }
+#nav ul li a{ color:#c0c0c0; display:block; padding:15px 10px; letter-spacing:1px; font-size:120%; }
 #nav ul li a:hover{ background:rgba(0,0,0,.75); }
 #nav ul li.active a{ background:rgba(0,0,0,.75); color:#b5a16c}
 
@@ -84,21 +84,22 @@ h2 {
   position: relative;
   font-family: 'Raleway', sans-serif;
   z-index: 50;
+  color: #4C4545;
 }
 
 .main-content--max-width {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
-  background: #FFEAB2;
+  background: #c0c0c0;
   padding: 3% 0;
-  border: 15px solid #6c7eb5;
+  border: 15px solid #4C4545;
   border-bottom: none;
 }
 
 .bottom-content {
   border-top: none;
-  border-bottom: 15px solid #6c7eb5;
+  border-bottom: 15px solid #4C4545;
   margin-bottom: 60px;
 }
 
@@ -281,7 +282,7 @@ h2 {
 
 ul.pic{	position: absolute; list-style:none; margin:0; padding:0;	width: 1100px;}
 ul.pic li{	width:310px;	float: left; margin-bottom:20px; margin-top:30px;}
-ul.pic li span{display:block;	margin-left:20px; margin-right:20px; margin-bottom:20px;color:#FFF;	text-transform:uppercase;}
+ul.pic li span{display:block;	margin-left:20px; margin-right:20px; margin-bottom:20px;color:#c0c0c0;	text-transform:uppercase;}
 ul.pic li img{	margin:0 auto; max-width:90%}
 ul.page{margin: 0 auto;padding-top: 20px;}
 
@@ -342,7 +343,7 @@ ul.page{margin: 0 auto;padding-top: 20px;}
 
 .grid figure figcaption {
 	padding: 2em;
-	color: #fff;
+	color: #c0c0c0;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -429,15 +430,15 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba figcaption::before {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
 	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
 }
 
 figure.effect-bubba figcaption::after {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
 	-webkit-transform: scale(1,0);
 	transform: scale(1,0);
 }
@@ -509,7 +510,7 @@ figure.effect-bubba:hover p {
 .nav-pills > li > a:focus,
 .nav-pills > li > a.active {
   border: none;
-  background: #FFEAB2;
+  background: #c0c0c0;
   color: #000;
   font-size: 60px;
 }
@@ -531,8 +532,8 @@ figure.effect-bubba:hover p {
 
 }
 .portfolio-item figcaption {
-	background: #BFA253;
-	background: rgba(191, 162, 83, 0.59);
+  background: rgba(76, 69, 69, 0.8);
+	/*background: rgba(191, 162, 83, 0.6);*/
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -559,7 +560,7 @@ figure.effect-bubba:hover p {
 	transform: rotate(0deg) scale(1);
 }
 figcaption h3 {
-	color: #fff;
+	color: #c0c0c0;
 	font-size: 24px;
 	line-height: 28px;
 	margin-top: 30%
@@ -572,7 +573,7 @@ figcaption h3 {
 .services-box{ position:relative;}
 
 .icon-box { font-size:120%; font-weight:600;
-	background: #fff; color:#000;
+	background: #c0c0c0; color:#000;
 	border-radius: 5px;	padding: 10% 5%;
 	text-align: center
 }
@@ -586,7 +587,7 @@ figcaption h3 {
 	text-align: center;
 	background: #b5a16c;
 	border-radius: 50%; width:100px; height:100px; line-height:100px;
-	color: #fff
+	color: #c0c0c0
 }
 .texts-a img{padding:15%; margin:10px; vertical-align:top;}
 .hover-box {
@@ -615,7 +616,7 @@ figcaption h3 {
 	transform: translateY(0px) scale(1);
 }
 .inner-hover-box p {
-	color: #fff;
+	color: #c0c0c0;
 	padding:0px; margin:0;
 }
 
@@ -624,7 +625,7 @@ figcaption h3 {
 /*contact*/
 #contact .padding{ background:rgba(0,0,0,.5); text-align:center;}
 
-#contact-box{ margin:15px; padding:5%; border:2px solid #FFF;}
+#contact-box{ margin:15px; padding:5%; border:2px solid #c0c0c0;}
 
 #contact ul{ list-style:none; margin:0 0 30px; padding:0;}
 #contact ul li{ font-size:130%; margin-bottom:15px;}
@@ -632,7 +633,7 @@ figcaption h3 {
 #contact ul li:last-child{ margin-bottom:0;}
 #contact ul li i{ font-size:18px; margin-right:5px;}
 #contact ul li:first-child i{ font-size:30px;}
-#contact ul li a{ color:#FFF;}
+#contact ul li a{ color:#c0c0c0;}
 #contact ul li a:hover{}
 
 #contact .btn-primary i{margin-right: 5px;}
@@ -644,8 +645,8 @@ figcaption h3 {
     -webkit-transition: all 0.2s ease-out 0s; -moz-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s;
 }
 .btn-primary:focus, .btn-primary:hover{ background:#000;}
-.btn-default{background: #b5a16c;border:none; text-transform: uppercase; padding: 10px 30px; letter-spacing: 1px; color:#FFF; font-size: 130%; text-shadow:none;}
-.btn-default:hover, .btn-default:focus{ background:#000; color:#FFF;}
+.btn-default{background: #b5a16c;border:none; text-transform: uppercase; padding: 10px 30px; letter-spacing: 1px; color:#c0c0c0; font-size: 130%; text-shadow:none;}
+.btn-default:hover, .btn-default:focus{ background:#000; color:#c0c0c0;}
 
 .modal-content{ text-align:center;}
 .modal-content .modal-header{ padding:30px;}
@@ -675,9 +676,9 @@ footer{ height: 450px; background-color:#000; position:relative; z-index:50;}
 	margin:0 4px;
 }
 .footer-icon ul li a{ 	color:#333 !important;	}
-.footer-icon ul li a:hover {color:#fff !important; text-decoration:none;	}
+.footer-icon ul li a:hover {color:#c0c0c0 !important; text-decoration:none;	}
 .footer-icon ul li a i{
-	background:#FFF; color:#000;
+	background:#c0c0c0; color:#4C4545;
 	display: block;
 	height: 35px;
 	width: 35px;
@@ -687,17 +688,20 @@ footer{ height: 450px; background-color:#000; position:relative; z-index:50;}
 		border-radius:100%;transition:all 0.4s ease-in-out;
 }
 
-.footer-icon ul li a .fa-facebook:hover, .footer-icon ul li a .fa-facebook:focus {background:#3b5998; color:#FFF}
-.footer-icon ul li a .fa-google-plus:hover ,.footer-icon ul li a .fa-google-plus:focus {background:#dd4b39; color:#FFF}
-.footer-icon ul li a .fa-youtube-play:hover, .footer-icon ul li a .fa-youtube-play:focus {background:#bb0000; color:#FFF}
-.footer-icon ul li a .fa-instagram:hover, .footer-icon ul li a .fa-instagram:focus{background:#125688; color:#FFF}
+.footer-icon ul li a .fa-facebook:hover, .footer-icon ul li a .fa-facebook:focus {background:#3b5998; color:#c0c0c0}
+.footer-icon ul li a .fa-google-plus:hover ,.footer-icon ul li a .fa-google-plus:focus {background:#dd4b39; color:#c0c0c0}
+.footer-icon ul li a .fa-youtube-play:hover, .footer-icon ul li a .fa-youtube-play:focus {background:#bb0000; color:#c0c0c0}
+.footer-icon ul li a .fa-instagram:hover, .footer-icon ul li a .fa-instagram:focus{background:#125688; color:#c0c0c0}
 /*--------------------------- 分享連結 end---------------------------*/
 
 
 #copyright-box{ color:rgba(255,255,255,0.4); width: 100%; text-align: center; margin: 20px 0;}
-#copyright-box a { color: #b5a16c; font-weight: 600; }
+#copyright-box a { color: #c0c0c0; font-weight: 600; }
 
-.company-name{ font-weight: 600; color:#b5a16c; margin-bottom:5px;}
+.company-name{ font-weight: 600; -webkit-column-rule: #c0c0c0;
+-moz-column-rule: #c0c0c0;
+-o-column-rule: #c0c0c0;
+column-rule: #c0c0c0; margin-bottom:5px;}
 
 #copyright-box ul{margin:0; padding:0;}
 #copyright-box ul li { margin:0; padding:0;display: inline-block}
