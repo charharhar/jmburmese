@@ -662,7 +662,7 @@ figcaption h3 {
 
 
 /*--------------------------------footer--------*/
-footer{ height: 450px; background-color:#000; position:relative; z-index:50;}
+footer{ height: 50%; width: 100%; background-color:#000; position:relative; z-index:50;}
 
 
 /*---------------------------分享連結---------------------------*/

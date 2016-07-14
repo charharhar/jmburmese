@@ -737,22 +737,19 @@
     background: #4C4545;
   }
 
-  .social-overlay {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0);
+  .contact-block {
+    padding: 0;
+    text-align: center;
   }
 
-  .contact-block {
-    padding: 20px;
-    border-bottom: 2px solid #b5a16c;
+  .contact-block:after {
+    position: relative;
+    display: block;
+    content: '';
+    background: #b5a16c;
+    height: 2px;
+    width: 40px;
+    margin: 20px auto;
   }
 
   .contact-block:last-of-type {
@@ -760,8 +757,11 @@
   }
 
   .contact-block .contact-header {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 400;
     margin-bottom: 20px;
+    font-family: 'Playfair Display SC', "微軟正黑體";
+    color: #b5a16c;
   }
 
   .contact-block p {
@@ -769,16 +769,23 @@
     letter-spacing: 2px;
     line-height: 2rem;
     font-size: 12px;
+    color: #c0c0c0;
   }
 
   .vertical-align {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100%;
   }
+
+  .clearboth {
+    clear: both;
+  }
+
 </style>
 
 
@@ -787,24 +794,23 @@
   <div class="contact-us" id="contact">
     <div class="contact-block">
       <p class="contact-header">Taipei</p>
-      <p>13F No. 248 Sec. 3 Nanjing E. Rd. Sonshan Dist. Taipei, Taiwan</p>
+      <p>13F No. 248 Sec. 3 Nanjing E. Rd. <br> Sonshan Dist. Taipei, Taiwan</p>
       <p><span>T:</span> +886 2 2731 0992</p>
       <p><span>F:</span> +886 2 2731 2010</p>
     </div>
     <div class="contact-block">
       <p class="contact-header">Shanghai</p>
-      <p>1376 Nanjin W. Rd. Suite 437 East Office Tower China 200040</p>
+      <p>1376 Nanjin W. Rd. Suite 437 <br> East Office Tower China 200040</p>
       <p><span>T:</span> +86 21 6289 8581</p>
       <p><span>F:</span> +86 21 6289 8582</p>
     </div>
     <div class="contact-block">
       <p class="contact-header">Myanmar</p>
-      <p>224a 7F Uwisara Rd. Bahan Township Yangon, Myanmar</p>
+      <p>224a 7F Uwisara Rd. <br> Bahan Township Yangon, Myanmar</p>
     </div>
   </div>
 
   <div class="social-copyright">
-  <div class="social-overlay">
     <div class="vertical-align">
       <div class="col-sm-6 footer-icon">
         <ul>
@@ -820,7 +826,8 @@
       </div>
     </div>
   </div>
-  </div>
+
+  <div class="clearboth"></div>
 
 </footer>
 
