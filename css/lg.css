@@ -84,22 +84,22 @@ h2 {
   position: relative;
   font-family: 'Raleway', sans-serif;
   z-index: 50;
-  color: #4C4545;
+  color: #c0c0c0;
 }
 
 .main-content--max-width {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
-  background: #c0c0c0;
+  background: #4C4545;
   padding: 3% 0;
-  border: 15px solid #4C4545;
+  border: 15px solid #c0c0c0;
   border-bottom: none;
 }
 
 .bottom-content {
   border-top: none;
-  border-bottom: 15px solid #4C4545;
+  border-bottom: 15px solid #c0c0c0;
   margin-bottom: 60px;
 }
 
@@ -502,7 +502,7 @@ figure.effect-bubba:hover p {
 }
 .nav-pills > li > a {
 	border-radius: 0;
-	color: #333;
+	color: #c0c0c0;
 	border: 1px solid #ccc;
 
 }
@@ -510,8 +510,8 @@ figure.effect-bubba:hover p {
 .nav-pills > li > a:focus,
 .nav-pills > li > a.active {
   border: none;
-  background: #c0c0c0;
-  color: #000;
+  background: #4C4545;
+  color: #c0c0c0;
   font-size: 60px;
 }
 .nav-pills > li > a.insta:hover {
