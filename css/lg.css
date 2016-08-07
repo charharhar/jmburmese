@@ -116,7 +116,7 @@ h2 {
   margin: 20px 0;
   letter-spacing: 2px;
   line-height: 1.8em;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .sub-content .two-column:nth-of-type(1) {
@@ -134,7 +134,17 @@ h2 {
   width: 50%;
 }
 
-.padding{ padding: 60px;}
+.single-column {
+  padding: 0 60px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bolded {
+  font-weight: 600;
+}
+
+.padding{ padding: 40px 60px;}
 
 .main-content--full-width .heading-center {
   color: #b5a16c;
@@ -165,22 +175,22 @@ h2 {
 
 .service-column p {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* HAMBURGER ICON */
+
+.mobile-nav-logo {
+  display: none;
+}
 
 #hamburger-icon {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-#hamburger-icon {
-  display: inline-block;
+  display: none;
   width: 30px;
   height: 21px;
-  position: absolute;
   margin-top: 21px;
   margin-left: 25px;
   -webkit-transform: rotate(0deg);
@@ -250,7 +260,218 @@ h2 {
   left: 50%;
 }
 
+#services ul {
+  list-style: none;
+}
 
+#services ul li {
+  margin: 15px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#services ul li span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+
+.sb-slide {
+  height: 100%;
+}
+.sliderhome {
+  height: 100%;
+}
+
+.header-navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#header-nav {
+  position: absolute;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.max-width-auto {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-logo img {
+  width: 150px;
+  height: 112.5px;
+}
+
+#header-nav-fixed {
+  position: fixed;
+  z-index: 60;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px);
+  -webkit-transition: .3s ease-in-out all;
+          transition: .3s ease-in-out all;
+}
+
+.header-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+#header-nav-fixed #nav-logo img {
+  width: 80px;
+  height: 60px;
+}
+
+.header-navbar ul {
+  list-style: none;
+}
+
+.header-navbar ul li {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.header-navbar ul li a {
+  color: #c0c0c0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-navbar ul li a:hover {
+  color: #b5a16c;
+}
+
+.header-navbar ul li.has-sub {
+  padding: 0;
+}
+
+.header-navbar ul li.has-sub li{
+  margin-left: 20px;
+}
+
+.first-nav {
+  margin-top: 40px;
+  opacity: .25;
+  max-width: 300px;
+  -webkit-transition: .5s ease-in-out all;
+          transition: .5s ease-in-out all;
+}
+
+.first-nav:hover {
+  opacity: 1;
+}
+
+.hidden-nav-options {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+
+  display: none;
+}
+
+.hidden-nav-options ul {
+  list-style: none;
+}
+
+.hidden-nav-options {
+  text-align: left;
+  padding: 10px 20px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+          transform: translateY(-400px);
+  transition: .3s ease-in-out all;
+}
+
+.nav-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.lang-icon {
+  float: right;
+}
+
+.lang-nav {
+  float: right;
+  opacity: .2;
+  -webkit-transition: .5s ease-in-out all;
+          transition: .5s ease-in-out all;
+}
+
+.lang-nav:hover {
+  opacity: 1;
+}
+
+.navbar-wrapper {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.navbar-table {
+  margin: 0 auto;
+  width: 100%%;
+}
+
+.navbar-table tr td {
+  padding: 0 10px;
+  width: 14%;
+}
+
+.navbar-table tr td:nth-of-type(4) {
+  width: 16%;
+}
+
+.navbar-table tr td a {
+  color: #c0c0c0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.active-diamond {
+  width: 7px;
+  height: 7px;
+  background-color: #c0c0c0;
+
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 1s all;
+}
+
+.clearfix {
+  clear: both;
+}
 
 
 

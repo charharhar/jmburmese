@@ -143,155 +143,6 @@
   </div>
 </div> -->
 
-<style>
-.sb-slide {
-  height: 100%;
-}
-.sliderhome {
-  height: 100%;
-}
-
-.header-navbar {
-  top: 0;
-  left: 0;
-  right: 0;
-  color: white;
-}
-
-#header-nav {
-  position: absolute;
-  z-index: 10;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.max-width-auto {
-  position: relative;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#nav-logo img {
-  width: 150px;
-  height: 112.5px;
-}
-
-#header-nav-fixed {
-  position: fixed;
-  z-index: 60;
-  color: white;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.85);
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  opacity: 0;
-  -webkit-transform: translateY(-90px);
-      -ms-transform: translateY(-90px);
-          transform: translateY(-90px);
-  -webkit-transition: .3s ease-in-out all;
-          transition: .3s ease-in-out all;
-}
-
-.header-active {
-  opacity: 1 !important;
-  -webkit-transform: translateY(0) !important;
-      -ms-transform: translateY(0) !important;
-          transform: translateY(0) !important;
-}
-
-#header-nav-fixed #nav-logo img {
-  width: 80px;
-  height: 60px;
-}
-
-.header-navbar ul {
-  list-style: none;
-}
-
-.header-navbar ul li {
-  font-size: 20px;
-  padding: 10px 0;
-}
-
-.header-navbar ul li a {
-  color: #c0c0c0;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.header-navbar ul li a:hover {
-  color: #b5a16c;
-}
-
-.header-navbar ul li.has-sub {
-  padding: 0;
-}
-
-.header-navbar ul li.has-sub li{
-  margin-left: 20px;
-}
-
-.first-nav {
-  margin-top: 40px;
-  opacity: .25;
-  max-width: 300px;
-  -webkit-transition: .5s ease-in-out all;
-          transition: .5s ease-in-out all;
-}
-
-.first-nav:hover {
-  opacity: 1;
-}
-
-.hidden-nav-options {
-  position: absolute;
-  top: 75px;
-  left: 20px;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.85);
-}
-
-.hidden-nav-options ul {
-  list-style: none;
-}
-
-.hidden-nav-options {
-  text-align: left;
-  padding: 10px 20px;
-
-  opacity: 0;
-  -webkit-transform: translateY(-400px);
-      -ms-transform: translateY(-400px);
-          transform: translateY(-400px);
-  transition: .3s ease-in-out all;
-}
-
-.nav-active {
-  opacity: 1 !important;
-  -webkit-transform: translateY(0) !important;
-      -ms-transform: translateY(0) !important;
-          transform: translateY(0) !important;
-}
-
-.lang-icon {
-  float: right;
-}
-
-.lang-nav {
-  float: right;
-  opacity: .2;
-  -webkit-transition: .5s ease-in-out all;
-          transition: .5s ease-in-out all;
-}
-
-.lang-nav:hover {
-  opacity: 1;
-}
-
-</style>
-
 <header id="header-nav" class="header-navbar">
   <div class="max-width-auto">
     <a href="index.html" id="nav-logo">
@@ -305,23 +156,39 @@
         <li><a>Chinese(Traditional)</a></li>
       </ul>
     </div>
-
+<!--
     <ul class="first-nav">
       <li><a href="#about"><span>About Us</span></a></li>
-      <li><a href="#Gemstones_Main"><span>Gemstones From Myanmar</span></a></li>
+      <li><a href="#Gemstones_Main"><span>Myanmar Gemstones</span></a></li>
       <li><a href="#Gemstones_rub"><span>Origins of Ruby</span></a></li>
       <li><a href="#Gemstones_sap"><span>Colors of Sapphire</span></a></li>
       <li><a href="#products" ><span>Products</span></a></li>
       <li><a href="#services" ><span>Services</span></a></li>
       <li><a href="#contact" ><span>Contact Us</span></a></li>
-    </ul>
+    </ul> -->
 
   </div>
 </header>
 
 <header id="header-nav-fixed" class="header-navbar">
   <div class="max-width-auto">
-    <a href="index.html" id="nav-logo">
+
+    <div class="navbar-wrapper">
+      <div class="active-diamond"></div>
+      <table class="navbar-table">
+        <tr>
+          <td><a class="nav-option" data-choice="about" href="#about">About</a></td>
+          <td><a class="nav-option" data-choice="main" href="#Gemstones_Main">Myanmar Gemstones</a></td>
+          <td><a class="nav-option" data-choice="ruby" href="#Gemstones_rub">Origins of Ruby</a></td>
+          <td><a href="index.html" id="nav-logo"><img src="images/logo.png" alt=""></a></td>
+          <td><a class="nav-option" data-choice="sap" href="#Gemstones_sap">Colors of Sapphire</a></td>
+          <td><a class="nav-option" data-choice="product" href="#products">Products</a></td>
+          <td><a class="nav-option" data-choice="service" href="#services">Services</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <a class="mobile-nav-logo" href="index.html" id="nav-logo">
       <img src="images/logo.png" alt="">
     </a>
 
@@ -379,7 +246,7 @@
 
 <div class="main-content main-content--max-width container-fluid">
 
-  <div id="about" class="row" >
+  <div class="section-wrappers row" id="about">
     <div class="col-xs-12 padding">
        <div class="heading-center">
          <h2>About us</h2>
@@ -396,13 +263,16 @@
           <p>At Jewelry Management, our mission is to inspire more people to collect jewelry.
           We aim to provide the knowledge and confidence collectors desire to begin collecting the finest gems in the world.</p>
         </div>
+        <div class="clearfix"></div>
+
       </div>
 
     </div>
+    <div class="clearfix"></div>
   </div><!--/about-->
 
 
-  <div id="Gemstones_Main" class="row">
+  <div class="section-wrappers row" id="Gemstones_Main">
     <div class="col-xs-12 padding">
       <div class="heading-center">
         <h2>Gemstones</h2>
@@ -412,13 +282,17 @@
       <div class="sub-content">
         <div class="two-column">
           <p>For many centuriessome of the most important colored gems in the world have been mined in Burma (Myanmar). Currently the most prestigious origin for Rubies, Sapphires and Jadeite, the land also produces other high quality gems such as Spinel, Peridot, Tourmaline, Moonstone and more than 50 other gemstones.</p>
-          <p>Most rubies and sapphires (around 85%) on the market have been through a process Heat Treatment or Clarity Enchancement. This process improves a stone’s presentation from color to clarity. By treating the gem with highheat, one of the major components in a gemstones growth cycle, the clarity inclusions within the gem will begin to heal and the colors will become more pronounced.</p>
         </div>
         <div class="two-column">
-          <p>However, at JM, we believe that heat treated robs a gem of its natural value. Therefore, we insist on selecting only the finest natural non heated gems. Only the best of the best untreated gemstones will stand the test of history and increase in value over time.</p>
+          <p>Most rubies and sapphires (around 85%) on the market have been through a process Heat Treatment or Clarity Enchancement, which improves a stone’s presentation from color to clarity. By treating the gem with high heat, one of the major components in a gemstones growth cycle, the clarity inclusions within the gem will begin to heal and the colors will become more pronounced.</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="single-column">
+          <p class="bolded">However, at JM, we believe that heat treated robs a gem of its natural value. Therefore, we insist on selecting only the finest natural non heated gems. Only the best of the best untreated gemstones will stand the test of history and increase in value over time.</p>
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
   </div><!--/Gemstones_Main-->
 
 </div> <!-- main-content max-width -->
@@ -431,7 +305,7 @@
 
 <div class="main-content main-content--full-width">
 
-  <div id="Gemstones_rub" class="row">
+  <div class="section-wrappers row" id="Gemstones_rub">
 
     <div class="col-xs-12 padding">
       <div class="heading-center">
@@ -488,7 +362,7 @@
   </div><!--/newpro-->
 
 
-  <div id="Gemstones_sap" class="row">
+  <div class="section-wrappers row" id="Gemstones_sap">
     <div class="col-xs-12 padding">
       <div class="heading-center">
         <h2>Sapphire</h2>
@@ -546,10 +420,8 @@
 </div> <!-- main-content full-width -->
 
 
-
-
 <div class="main-content main-content--max-width bottom-content">
-<div id="products" class="padding row">
+<div id="products" class="padding row section-wrappers">
   <div class="col-xs-12">
     <div class="heading-center">
       <h2>Products</h2>
@@ -578,7 +450,7 @@
   <div class="products-box col-xs-12">
 
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home1.jpg" alt="Floral Perfume">
+      <img src="images/taller-product-1.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -586,7 +458,7 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home3.jpg" alt="Floral Perfume">
+      <img src="images/taller-product-2.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -594,7 +466,7 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home4.jpg" alt="Floral Perfume">
+      <img src="images/taller-product-3.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -602,7 +474,15 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home5.jpg" alt="Floral Perfume">
+      <img src="images/taller-product-4.jpg" alt="Floral Perfume">
+      <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
+        <figcaption class="mask">
+          <h3>JM</h3>
+        </figcaption>
+      </a>
+    </figure>
+<!--     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
+      <img src="images/product-5.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -610,7 +490,7 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home3.jpg" alt="Floral Perfume">
+      <img src="images/product-6.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -618,7 +498,7 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home5.jpg" alt="Floral Perfume">
+      <img src="images/product-7.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
@@ -626,49 +506,22 @@
       </a>
     </figure>
     <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home1.jpg" alt="Floral Perfume">
+      <img src="images/product-8.jpg" alt="Floral Perfume">
       <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
         <figcaption class="mask">
           <h3>JM</h3>
         </figcaption>
       </a>
     </figure>
-    <figure class="mix portfolio-item portfolio1 col-md-3 col-sm-6 col-xs-12" style="display: inline-block;">
-      <img src="images/home4.jpg" alt="Floral Perfume">
-      <a href="#portfolio_content0" class="portfolio-link" data-toggle="modal">
-        <figcaption class="mask">
-          <h3>JM</h3>
-        </figcaption>
-      </a>
-    </figure>
-
+ -->
   </div><!--/products-box-->
 
-
+  <div class="clearfix"></div>
 </div><!--/products-->
 
 
-<style>
-  #services ul {
-    list-style: none;
-  }
 
-  #services ul li {
-    margin: 15px 0;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  #services ul li span {
-    font-size: 18px;
-    font-weight: 600;
-  }
-</style>
-
-
-<div id="services" class="padding row">
+<div class="section-wrappers padding row" id="services">
   <div class="col-xs-12">
     <div class="heading-center">
       <h2>Services</h2>
@@ -822,7 +675,7 @@
       </div>
 
       <div id="copyright-box" class="col-sm-6">
-        <div class="company-name">Copyright © <a href="#" target="_blank">2016 JM. All Rights Reserved.</a></div>
+        <div class="company-name">Copyright © <a href="index.html">2016 JM. All Rights Reserved.</a></div>
       </div>
     </div>
   </div>

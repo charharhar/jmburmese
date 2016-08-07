@@ -1,32 +1,50 @@
 ( function( $ ) {
 $( document ).ready(function() {
-  $('#cssmenu li.has-sub>a').on('click', function(){
-  		$(this).removeAttr('href');
-  		var element = $(this).parent('li');
-  		if (element.hasClass('open')) {
-  			element.removeClass('open');
-  			element.find('li').removeClass('open');
-  			element.find('ul').slideUp();
-  		}
-  		else {
-  			element.addClass('open');
-  			element.children('ul').slideDown();
-  			element.siblings('li').children('ul').slideUp();
-  			element.siblings('li').removeClass('open');
-  			element.siblings('li').find('li').removeClass('open');
-  			element.siblings('li').find('ul').slideUp();
-  		}
-  	});
 
+  var leftPos;
   var offsetTop = $('#header-nav-fixed').height()*2;
+  var $sectionVals = $('.section-wrappers').map(function() {
+    return $(this).offset().top - 500;
+  })
+
   $(document).on('scroll', function() {
-    if ($(this).scrollTop() > offsetTop) {
+    var scrolled = $(this).scrollTop()
+    if (scrolled > offsetTop) {
       $('#header-nav-fixed').addClass('header-active');
     } else {
       $('#header-nav-fixed').removeClass('header-active');
       $('.hidden-nav-options').removeClass('nav-active');
       $('#hamburger-icon').removeClass('open');
     }
+
+  switch ( true ) {
+    case scrolled > $sectionVals[5]:
+      leftPos = '93%';
+      break;
+    case scrolled > $sectionVals[4]:
+      leftPos = '79%';
+      break;
+    case scrolled > $sectionVals[3]:
+      leftPos = '65%';
+      break;
+    case scrolled > $sectionVals[2]:
+      leftPos = '35%';
+      break;
+    case scrolled > $sectionVals[1]:
+      leftPos = '21%';
+      break;
+    case scrolled > $sectionVals[0]:
+      leftPos = '7%';
+      break;
+    default:
+      leftPos = '-50%';
+      break;
+  }
+    $('.active-diamond').css({
+      opacity: 1,
+      left: leftPos
+    })
+
   })
 
   var $root = $('html, body');

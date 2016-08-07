@@ -11,6 +11,23 @@ html,body{height: inherit;}
 
 .padding{ padding:12% 6%;}
 
+#hamburger-icon {
+  display: inline-block;
+}
+
+.mobile-nav-logo {
+  display: block;
+}
+
+.navbar-wrapper {
+  display: none;
+}
+
+.hidden-nav-options {
+  display: inline-block;
+}
+
+
 
 /*nav*/
 #smxs-top{background-color:#000; background-repeat:repeat;}
@@ -59,7 +76,7 @@ ul.pic li{ width:450px; padding-left:50px; padding-right:50px;}
 /*products*/
 .centered-pills ul{ width:100%;}
 .centered-pills ul li{ width:48.5%; text-align:center;	margin:0 0.5%;}
-.centered-pills ul li+li+li{ margin-top:5px;}	
+.centered-pills ul li+li+li{ margin-top:5px;}
 .centered-pills ul li a{ width:100%;}
 
 .nav-pills > li+li > a { margin-left: 0px;}
@@ -125,7 +142,7 @@ ul.pic li span{ margin-left:5%; margin-right:5%;}
 
 
 /*newpro recommend*/
-figure.effect-bubba p{ display:none}	
+figure.effect-bubba p{ display:none}
 figure.effect-bubba h2, #grid-S figure.effect-bubba h2{ padding-top:25%}
 
 .special-word{ padding:0 6% 12%;}
