@@ -55,7 +55,7 @@ $( document ).ready(function() {
     return false;
   });
 
-  $('#hamburger-icon').click(function(){
+  $('.hamburger-icon').click(function(){
     $(this).toggleClass('open');
     $('.hidden-nav-options').toggleClass('nav-active');
   });

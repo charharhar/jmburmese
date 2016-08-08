@@ -119,54 +119,53 @@
 
   <div id="all" class="sb-slide">
 
-
-<!-- <div id="nav" class="hidden-sm hidden-xs">
-  <div class="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-
-    <div id='cssmenu'>
-      <ul>
-        <li class='active'><a href="index.html"  ><span>Home</span></a></li>
-        <li><a href="#about" ><span>About Us</span></a></li>
-
-        <li class='has-sub'><a href='#Gemstones_Main' ><span>Gemstones From Myanmar</span></a>
-          <ul>
-            <li ><a href='#Gemstones_rub' ><span>Origin of ruby</span></a>
-            </li>
-            <li class='last'><a href='#Gemstones_sap' ><span>Color of sapphire</span></a>
-            </li>
-          </ul>
-        </li>
-        <li><a href='#products' ><span>Products</span></a></li>
-        <li><a href='#services' ><span>Services</span></a></li>
-        <li class='last'><a href='#contact' ><span>Contact Us</span></a></li>
-      </ul>
-  </div>
-</div> -->
-
 <header id="header-nav" class="header-navbar">
   <div class="max-width-auto">
-    <a href="index.html" id="nav-logo">
+
+    <div class="navbar-wrapper">
+      <table class="navbar-table">
+        <tr>
+          <td><a class="nav-option" data-choice="about" href="#about">About</a></td>
+          <td><a class="nav-option" data-choice="main" href="#Gemstones_Main">Myanmar Gemstones</a></td>
+          <td><a class="nav-option" data-choice="ruby" href="#Gemstones_rub">Origins of Ruby</a></td>
+          <td><a href="index.html" id="nav-logo"><img src="images/logo.png" alt=""></a></td>
+          <td><a class="nav-option" data-choice="sap" href="#Gemstones_sap">Colors of Sapphire</a></td>
+          <td><a class="nav-option" data-choice="product" href="#products">Products</a></td>
+          <td><a class="nav-option" data-choice="service" href="#services">Services</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <a class="mobile-nav-logo" href="index.html" id="nav-logo">
       <img src="images/logo.png" alt="">
     </a>
 
-    <div class="lang-nav">
+    <div class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="hidden-nav-options">
+      <ul>
+        <li><a href="#about"><span>About Us</span></a></li>
+        <li><a href="#Gemstones_Main"><span>Gemstones From Myanmar</span></a></li>
+        <li><a href="#Gemstones_rub"><span>Origins of Ruby</span></a></li>
+        <li><a href="#Gemstones_sap"><span>Colors of Sapphire</span></a></li>
+        <li><a href="#products" ><span>Products</span></a></li>
+        <li><a href="#services" ><span>Services</span></a></li>
+        <li><a href="#contact" ><span>Contact Us</span></a></li>
+      </ul>
+    </div>
+<!--
+    <div class="lang-icon">
       <ul>
         <li><a>English</a></li>
         <li><a>Chinese(Simplified)</a></li>
         <li><a>Chinese(Traditional)</a></li>
       </ul>
-    </div>
-<!--
-    <ul class="first-nav">
-      <li><a href="#about"><span>About Us</span></a></li>
-      <li><a href="#Gemstones_Main"><span>Myanmar Gemstones</span></a></li>
-      <li><a href="#Gemstones_rub"><span>Origins of Ruby</span></a></li>
-      <li><a href="#Gemstones_sap"><span>Colors of Sapphire</span></a></li>
-      <li><a href="#products" ><span>Products</span></a></li>
-      <li><a href="#services" ><span>Services</span></a></li>
-      <li><a href="#contact" ><span>Contact Us</span></a></li>
-    </ul> -->
-
+    </div> -->
   </div>
 </header>
 
@@ -192,7 +191,7 @@
       <img src="images/logo.png" alt="">
     </a>
 
-    <div id="hamburger-icon">
+    <div class="hamburger-icon">
       <span></span>
       <span></span>
       <span></span>
