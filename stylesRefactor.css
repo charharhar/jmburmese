@@ -1,0 +1,145 @@
+.sb-slide {
+  height: 100%;
+}
+.sliderhome {
+  height: 100%;
+}
+
+.header-navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#header-nav {
+  position: absolute;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.max-width-auto {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-logo img {
+  width: 150px;
+  height: 112.5px;
+}
+
+#header-nav-fixed {
+  position: fixed;
+  z-index: 60;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px);
+  -webkit-transition: .3s ease-in-out all;
+          transition: .3s ease-in-out all;
+}
+
+.header-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+#header-nav-fixed #nav-logo img {
+  width: 80px;
+  height: 60px;
+}
+
+.header-navbar ul {
+  list-style: none;
+}
+
+.header-navbar ul li {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.header-navbar ul li a {
+  color: #c0c0c0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-navbar ul li a:hover {
+  color: #b5a16c;
+}
+
+.header-navbar ul li.has-sub {
+  padding: 0;
+}
+
+.header-navbar ul li.has-sub li{
+  margin-left: 20px;
+}
+
+.first-nav {
+  margin-top: 40px;
+  opacity: .25;
+  max-width: 300px;
+  -webkit-transition: .5s ease-in-out all;
+          transition: .5s ease-in-out all;
+}
+
+.first-nav:hover {
+  opacity: 1;
+}
+
+.hidden-nav-options {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.hidden-nav-options ul {
+  list-style: none;
+}
+
+.hidden-nav-options {
+  text-align: left;
+  padding: 10px 20px;
+
+  opacity: 0;
+  -webkit-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+          transform: translateY(-400px);
+  transition: .3s ease-in-out all;
+}
+
+.nav-active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.lang-icon {
+  float: right;
+}
+
+.lang-nav {
+  float: right;
+  opacity: .2;
+  -webkit-transition: .5s ease-in-out all;
+          transition: .5s ease-in-out all;
+}
+
+.lang-nav:hover {
+  opacity: 1;
+}

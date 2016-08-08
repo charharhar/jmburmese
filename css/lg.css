@@ -465,7 +465,9 @@ h2 {
   bottom: -4px;
   left: 0;
   opacity: 0;
-  transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
   transition: 1s all;
 }
 
@@ -753,7 +755,8 @@ figure.effect-bubba:hover p {
 
 }
 .portfolio-item figcaption {
-  background: rgba(76, 69, 69, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  // background: rgba(76, 69, 69, 0.8);
 	/*background: rgba(191, 162, 83, 0.6);*/
 	position: absolute;
 	top: 0px;
@@ -761,24 +764,24 @@ figure.effect-bubba:hover p {
 	bottom: 0px;
 	right: 0px;
 	display: block;
-	opacity: 0;
+	opacity: 1;
 	transition: all .25s ease-in-out;
 	-moz-transition: all .25s ease-in-out;
 	-webkit-transition: all .25s ease-in-out;
 	-o-transition: all .25s ease-in-out;
-	-webkit-transform: rotate(3deg) scale(0.6);
-	-moz-transform: rotate(3deg) scale(0.6);
-	-ms-transform: rotate(3deg)) scale(0.6);
-	-o-transform: rotate(3deg) scale(0.6);
-	transform: rotate(3deg) scale(0.6);
-}
-.portfolio-item:hover figcaption {
-	opacity: 1;
 	-webkit-transform: rotate(0deg) scale(1);
 	-moz-transform: rotate(0deg) scale(1);
 	-ms-transform: rotate(0deg) scale(1);
 	-o-transform: rotate(0deg) scale(1);
 	transform: rotate(0deg) scale(1);
+}
+.portfolio-item:hover figcaption {
+  opacity: 0;
+  -webkit-transform: rotate(3deg) scale(0.6);
+  -moz-transform: rotate(3deg) scale(0.6);
+  -ms-transform: rotate(3deg)) scale(0.6);
+  -o-transform: rotate(3deg) scale(0.6);
+  transform: rotate(3deg) scale(0.6);
 }
 figcaption h3 {
 	color: #c0c0c0;
