@@ -260,22 +260,24 @@ h2 {
   left: 50%;
 }
 
+.services-list {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
 #services ul {
   list-style: none;
 }
 
 #services ul li {
-  margin: 15px 0;
-  text-align: center;
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: 400;
+  min-height: 50px;
+  padding: 10px 20px;
 }
 
-#services ul li span {
-  font-size: 18px;
-  font-weight: 600;
-}
 
 
 
