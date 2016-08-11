@@ -3,6 +3,15 @@
 
 /*-----------------------------------------------通用設定-------------------------------------------------------------------*/
 /*---------------------CSS3 動畫設定-----------------------------------------------*/
+@font-face {
+  src: url(../Fonts/StencilStd.otf);
+  font-family: StencilStd;
+}
+
+@font-face {
+  src: url(../Fonts/Kai.ttf);
+  font-family: Kai;
+}
 
 img,
 .logo,
@@ -38,9 +47,9 @@ a img {border:0}
 
 
 /*----------------------------------------------------------------all--------*/
-body{ background-color:#000; background-repeat:repeat; font-family: 'Raleway', "微軟正黑體"}
+body{ background-color:#000; background-repeat:repeat; font-family: 'Raleway', 'Arial', "微軟正黑體"}
 
-h1,h2,h3{font-family: 'Playfair Display SC', "微軟正黑體"; letter-spacing:1.8px;}
+h1,h2,h3{font-family: 'Playfair Display SC', 'StencilStd', "微軟正黑體"; letter-spacing:1.8px;}
 h2 {
   text-transform: uppercase;
   font-size: 60px;
@@ -82,7 +91,7 @@ h2 {
 
 .main-content {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Kai', 'Arial', 'Raleway', sans-serif;
   z-index: 50;
   color: #c0c0c0;
 }
@@ -114,9 +123,10 @@ h2 {
 
 .sub-content p {
   margin: 20px 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.8em;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .sub-content .two-column:nth-of-type(1) {
@@ -175,7 +185,6 @@ h2 {
 
 .service-column p {
   font-size: 12px;
-  font-weight: 400;
 }
 
 /*HAMBURGER ICON */
@@ -261,7 +270,7 @@ h2 {
 }
 
 .services-list {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -271,11 +280,11 @@ h2 {
 }
 
 #services ul li {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 12px;
-  font-weight: 400;
   min-height: 50px;
   padding: 10px 20px;
+  font-weight: 600;
 }
 
 
@@ -686,7 +695,10 @@ figure.effect-bubba:hover p {
 
 
 /*newpro*/
-#newpro{ padding-bottom:60px; border-bottom:3px solid #b5a16c;}
+#newpro{
+  padding-bottom:60px;
+  // border-bottom:3px solid #b5a16c;
+}
 /*recommend*/
 #recommend{ padding-bottom: 60px; }
 
