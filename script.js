@@ -18,23 +18,26 @@ $( document ).ready(function() {
     }
 
   switch ( true ) {
+    case scrolled > $sectionVals[6]:
+      leftPos = '94.5%';
+      break;
     case scrolled > $sectionVals[5]:
-      leftPos = '93%';
+      leftPos = '83.5%';
       break;
     case scrolled > $sectionVals[4]:
-      leftPos = '79%';
+      leftPos = '72.5%';
       break;
     case scrolled > $sectionVals[3]:
-      leftPos = '65%';
+      leftPos = '61.5%';
       break;
     case scrolled > $sectionVals[2]:
-      leftPos = '35%';
+      leftPos = '38.5%';
       break;
     case scrolled > $sectionVals[1]:
-      leftPos = '21%';
+      leftPos = '27.5%';
       break;
     case scrolled > $sectionVals[0]:
-      leftPos = '7%';
+      leftPos = '16.5%';
       break;
     default:
       leftPos = '-50%';
