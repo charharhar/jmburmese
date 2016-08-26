@@ -268,9 +268,9 @@
          <img src="images/hand-drawing.jpg" alt="">
          <div class="image-wrapper-mission">
             <div class="mission-statement">
-              <p><em>
+              <blockquote>
                 Our mission is to provide a base of knowledge and confidence to jewelry collectors of all levels by continuing to appreciate and advocate the collecting of the finest gems in the world.
-              </em></p>
+              </blockquote>
             </div>
         </div>
       </div>
@@ -648,6 +648,7 @@
 
 <style>
   .contact-us {
+    position: relative;
     float: left;
     width: 50%;
     height: 100%;
@@ -655,6 +656,15 @@
     color: #b5a16c;
     padding: 20px 40px;
   }
+
+  .contact-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
   .social-copyright {
     position: relative;
     float: left;
@@ -719,21 +729,23 @@
 <footer>
 
   <div class="contact-us section-wrappers" id="contact">
-    <div class="contact-block">
-      <p class="contact-header">Taipei</p>
-      <p>13F No. 248 Sec. 3 Nanjing E. Rd. <br> Sonshan Dist. Taipei, Taiwan</p>
-      <p><span>T:</span> +886 2 2731 0992</p>
-      <p><span>F:</span> +886 2 2731 2010</p>
-    </div>
-    <div class="contact-block">
-      <p class="contact-header">Shanghai</p>
-      <p>1376 Nanjin W. Rd. Suite 437 <br> East Office Tower China 200040</p>
-      <p><span>T:</span> +86 21 6289 8581</p>
-      <p><span>F:</span> +86 21 6289 8582</p>
-    </div>
-    <div class="contact-block">
-      <p class="contact-header">Myanmar</p>
-      <p>224a 7F Uwisara Rd. <br> Bahan Township Yangon, Myanmar</p>
+    <div class="contact-wrapper">
+      <div class="contact-block">
+        <p class="contact-header">Taipei</p>
+        <p>13F No. 248 Sec. 3 Nanjing E. Rd. <br> Sonshan Dist. Taipei, Taiwan</p>
+        <p><span>T:</span> +886 2 2731 0992</p>
+        <p><span>F:</span> +886 2 2731 2010</p>
+      </div>
+      <div class="contact-block">
+        <p class="contact-header">Shanghai</p>
+        <p>1376 Nanjin W. Rd. Suite 437 <br> East Office Tower China 200040</p>
+        <p><span>T:</span> +86 21 6289 8581</p>
+        <p><span>F:</span> +86 21 6289 8582</p>
+      </div>
+      <div class="contact-block">
+        <p class="contact-header">Myanmar</p>
+        <p>224a 7F Uwisara Rd. <br> Bahan Township Yangon, Myanmar</p>
+      </div>
     </div>
   </div>
 
