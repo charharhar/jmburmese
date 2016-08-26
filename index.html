@@ -578,8 +578,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .social-copyright {
@@ -626,26 +628,11 @@
     color: #c0c0c0;
   }
 
-  .vertical-align {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  .clearboth {
-    clear: both;
-  }
-
 </style>
 
-
-<footer>
-
-  <div class="contact-us section-wrappers" id="contact">
+<footer id="contact" class="footer-section section-wrappers">
+  <div class="footer-column"></div>
+  <div class="footer-column">
     <div class="contact-wrapper">
       <div class="contact-block">
         <p class="contact-header">Taipei</p>
@@ -664,34 +651,22 @@
         <p>224a 7F Uwisara Rd. <br> Bahan Township Yangon, Myanmar</p>
       </div>
     </div>
-  </div>
 
-  <div class="social-copyright">
-    <div class="vertical-align">
-      <div class="col-sm-6 footer-icon">
-        <ul>
-          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-      </div>
-
-      <div id="copyright-box" class="col-sm-6">
-        <div class="company-name">Copyright &copy; <a href="index.html">2016 JM. All Rights Reserved.</a></div>
-      </div>
+    <div id="copyright-box" class="col-sm-6">
+      <div class="company-name">Copyright &copy; <a href="index.html">2016 JM. All Rights Reserved.</a></div>
     </div>
   </div>
+  <div class="footer-column"></div>
 
-  <div class="clearboth"></div>
-
+<!--    -->
 </footer>
+
 
 </div><!--/sb-site-->
 
 
 <!-- contact-form -->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -724,7 +699,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 

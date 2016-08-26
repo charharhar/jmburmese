@@ -104,7 +104,6 @@ h2 {
 .bottom-content {
   border-top: none;
   border-bottom: 15px solid #c0c0c0;
-  margin-bottom: 60px;
 }
 
 .main-content--full-width {
@@ -979,14 +978,21 @@ figcaption h3 {
 
 /*--------------------------------footer--------*/
 
-footer{
-  height: 50vh;
+footer {
+  position: relative;
+  height: 100vh;
   width: 100%;
-  background-color:#000;
-  position:relative;
-  z-index:50;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
 }
 
+.footer-column {
+  position: relative;
+  height: 100%;
+  width: 33.3333%;
+  margin: 0;
+  float: left;
+}
 
 /*---------------------------分享連結---------------------------*/
 .footer-icon{ margin-top:12px; width:100%; padding-left:0; padding-right:0;}
@@ -1018,13 +1024,11 @@ footer{
 /*--------------------------- 分享連結 end---------------------------*/
 
 
-#copyright-box{ color:rgba(255,255,255,0.4); width: 100%; text-align: center; margin: 20px 0;}
+#copyright-box{
+  position: absolute;
+  bottom: 0;
+  color:rgba(255,255,255,0.4); width: 100%; text-align: center; margin: 20px 0;}
 #copyright-box a { color: #c0c0c0; font-weight: 600; }
-
-.company-name{ font-weight: 600; -webkit-column-rule: #c0c0c0;
--moz-column-rule: #c0c0c0;
--o-column-rule: #c0c0c0;
-column-rule: #c0c0c0; margin-bottom:5px;}
 
 #copyright-box ul{margin:0; padding:0;}
 #copyright-box ul li { margin:0; padding:0;display: inline-block}

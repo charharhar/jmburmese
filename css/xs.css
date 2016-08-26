@@ -1,8 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
-body, html {overflow-x: hidden}
+body, html {overflow-x: hidden; }
 html,body{height: inherit;}
+body {
+  overflow-y: hidden !important;
+}
 
 .sb-slide{ position:relative; z-index:1}
 
@@ -138,8 +141,6 @@ ul.pic li{ width:450px; padding-left:50px; padding-right:50px;}
 /*footer*/
 .footer-icon{ width:100%; padding-left:15px; padding-right:15px; margin-bottom:15px; margin-top:10px;}
 .footer-icon ul{ text-align: center;}
-
-.company-name { margin-bottom: 15px;}
 
 #copyright-box{ width:100%; text-align:center;}
 #copyright-box ul li{ width:49%; border:1px solid rgba(255,255,255,.1); padding:3px;}

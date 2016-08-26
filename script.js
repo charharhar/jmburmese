@@ -17,32 +17,33 @@ $( document ).ready(function() {
       $('#hamburger-icon').removeClass('open');
     }
 
-  switch ( true ) {
-    case scrolled > $sectionVals[6]:
-      leftPos = '94.5%';
-      break;
-    case scrolled > $sectionVals[5]:
-      leftPos = '83.5%';
-      break;
-    case scrolled > $sectionVals[4]:
-      leftPos = '72.5%';
-      break;
-    case scrolled > $sectionVals[3]:
-      leftPos = '61.5%';
-      break;
-    case scrolled > $sectionVals[2]:
-      leftPos = '38.5%';
-      break;
-    case scrolled > $sectionVals[1]:
-      leftPos = '27.5%';
-      break;
-    case scrolled > $sectionVals[0]:
-      leftPos = '16.5%';
-      break;
-    default:
-      leftPos = '-50%';
-      break;
-  }
+    switch ( true ) {
+      case scrolled > $sectionVals[6]:
+        leftPos = '94.5%';
+        break;
+      case scrolled > $sectionVals[5]:
+        leftPos = '83.5%';
+        break;
+      case scrolled > $sectionVals[4]:
+        leftPos = '72.5%';
+        break;
+      case scrolled > $sectionVals[3]:
+        leftPos = '61.5%';
+        break;
+      case scrolled > $sectionVals[2]:
+        leftPos = '38.5%';
+        break;
+      case scrolled > $sectionVals[1]:
+        leftPos = '27.5%';
+        break;
+      case scrolled > $sectionVals[0]:
+        leftPos = '16.5%';
+        break;
+      default:
+        leftPos = '-50%';
+        break;
+    }
+
     $('.active-diamond').css({
       opacity: 1,
       left: leftPos
@@ -51,9 +52,19 @@ $( document ).ready(function() {
   })
 
   var $root = $('html, body');
+
   $('a').click(function() {
+    var scrollTopVal;
+    var offsetValue = $( $.attr(this, 'href') ).offset().top;
+
+    if ( $( $.attr(this, 'href') ).hasClass('footer-section') ) {
+      scrollTopVal = offsetValue;
+    } else {
+      scrollTopVal = offsetValue - 100;
+    }
+
     $root.animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+      scrollTop: scrollTopVal
     }, 1000);
     return false;
   });
