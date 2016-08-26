@@ -4,6 +4,40 @@
 body, html {overflow-x: hidden}
 html,body{height: inherit;}
 
+.two-column {
+  width: 100%;
+}
+
+.sub-content .two-column:nth-of-type(1),
+.sub-content .two-column:nth-of-type(2) {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.sub-content p {
+  margin: 20px 0 0;
+}
+
+.single-column {
+  width: 100%;
+  padding: 0 45px;
+}
+
+.service-column {
+  width: 100%;
+  padding: 0 45px;
+  max-width: none;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
 .sb-slide{ position:relative; z-index:1}
 
 
@@ -37,11 +71,6 @@ ul.pic li{ width:600px; padding-left:50px; padding-right:50px;}
 
 #ad p{ display:block; padding:10px 20px;}
 #ad p.btn_left{ left:550px}
-
-
-/*newpro recommend*/
-.special-word{ padding-top:0;}
-.special-word:before{ display:block; content:''; border-style:solid; border-color:transparent transparent #efefef transparent;  margin:auto;  position:relative; z-index:1; margin-bottom:6%; margin-top:-40px;width:20px; height:20px;border-width:20px;}
 
 
 /*newpro*/
