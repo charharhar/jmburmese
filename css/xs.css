@@ -22,12 +22,12 @@ h2 {
 
 .padding{ padding:6%;}
 
-#hamburger-icon {
+.hamburger-icon {
   display: inline-block;
 }
 
 .mobile-nav-logo {
-  display: block;
+  display: inline-block;
 }
 
 .navbar-wrapper {
