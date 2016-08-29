@@ -41,7 +41,13 @@
     <div class="navbar-wrapper">
       <table class="navbar-table">
         <tr>
-          <td><a class="nav-option" data-choice="home" href="">English</a></td>
+          <td class="language-relative language-hover">
+            <a class="nav-option" data-choice="home" href="">English</a>
+            <ul class="language-dropdown">
+              <li><a href="">中文繁體</a></li>
+              <li><a href="">中文简体</a></li>
+            </ul>
+          </td>
           <td><a class="nav-option" data-choice="about" href="#about">About</a></td>
           <td><a class="nav-option" data-choice="main" href="#Gemstones_Main">Myanmar Gemstones</a></td>
           <td><a class="nav-option" data-choice="ruby" href="#Gemstones_rub">Origins of Ruby</a></td>
@@ -94,7 +100,13 @@
       <div class="active-diamond"></div>
       <table class="navbar-table">
         <tr>
-          <td><a class="nav-option" data-choice="home" href="">English</a></td>
+          <td class="language-relative language-hover">
+            <a class="nav-option" data-choice="home" href="">English</a>
+            <ul class="language-dropdown">
+              <li><a href="">中文繁體</a></li>
+              <li><a href="">中文简体</a></li>
+            </ul>
+          </td>
           <td><a class="nav-option" data-choice="about" href="#about">About</a></td>
           <td><a class="nav-option" data-choice="main" href="#Gemstones_Main">Myanmar Gemstones</a></td>
           <td><a class="nav-option" data-choice="ruby" href="#Gemstones_rub">Origins of Ruby</a></td>
@@ -198,29 +210,6 @@
     </div>
     <div class="clearfix"></div>
   </div><!--/about-->
-
-<style>
-  .image-wrapper {
-    position: relative;
-    width: 80%;
-    margin: 40px auto 0;
-  }
-
-  .image-wrapper-mission {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(192, 192, 192, 0.8);
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    max-height: 250px;
-  }
-</style>
 
   <div class="section-wrappers row" id="Gemstones_Main">
     <div class="col-xs-12 padding">
@@ -575,22 +564,9 @@
   }
 
   .contact-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  .social-copyright {
     position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    padding: 20px 40px;
-    background: #4C4545;
+    padding: 100px;
+    width: 100%;
   }
 
   .contact-block {
@@ -631,7 +607,6 @@
 </style>
 
 <footer id="contact" class="footer-section section-wrappers">
-  <div class="footer-column"></div>
   <div class="footer-column">
     <div class="contact-wrapper">
       <div class="contact-block">
@@ -650,13 +625,12 @@
         <p class="contact-header">Myanmar</p>
         <p>224a 7F Uwisara Rd. <br> Bahan Township Yangon, Myanmar</p>
       </div>
-    </div>
 
-    <div id="copyright-box" class="col-sm-6">
-      <div class="company-name">Copyright &copy; <a href="index.html">2016 JM. All Rights Reserved.</a></div>
+      <div id="copyright-box" class="col-sm-6">
+        <div class="company-name">Copyright &copy; <a href="index.html">2016 JM. All Rights Reserved.</a></div>
+      </div>
     </div>
   </div>
-  <div class="footer-column"></div>
 
 <!--    -->
 </footer>

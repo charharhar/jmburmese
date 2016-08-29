@@ -144,6 +144,27 @@ h2 {
   margin: 0 auto;
 }
 
+.image-wrapper {
+  position: relative;
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+.image-wrapper-mission {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(192, 192, 192, 0.8);
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-height: 250px;
+}
+
 .mission-statement {
   position: absolute;
   top: 50%;
@@ -172,6 +193,7 @@ h2 {
   top: -5px;
   left: -5px;
 }
+
 
 .padding{ padding: 40px 60px;}
 
@@ -564,6 +586,27 @@ h2 {
 }
 
 
+.language-relative {
+  position: relative;
+}
+
+.language-dropdown {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+ul.language-dropdown li {
+  padding: 5px 0;
+}
+
+.navbar-table tr td.language-hover:hover > ul.language-dropdown,
+ul.language-dropdown:hover {
+  display: block;
+}
 
 
 
@@ -980,18 +1023,22 @@ figcaption h3 {
 
 footer {
   position: relative;
-  height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 50;
+  margin-top: -15px;
 }
 
 .footer-column {
   position: relative;
   height: 100%;
-  width: 33.3333%;
-  margin: 0;
-  float: left;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 15px solid #4C4545;
+  border-left: 15px solid #c0c0c0;
+  border-right: 15px solid #c0c0c0;
+  border-bottom: 15px solid #c0c0c0;
 }
 
 /*---------------------------分享連結---------------------------*/
@@ -1026,6 +1073,7 @@ footer {
 
 #copyright-box{
   position: absolute;
+  left: 0;
   bottom: 0;
   color:rgba(255,255,255,0.4); width: 100%; text-align: center; margin: 20px 0;}
 #copyright-box a { color: #c0c0c0; font-weight: 600; }
