@@ -148,6 +148,9 @@ h2 {
   position: relative;
   width: 80%;
   margin: 40px auto 0;
+  -webkit-box-shadow: 0 14px 6px -6px #000;
+     -moz-box-shadow: 0 14px 6px -6px #000;
+          box-shadow: 0 14px 6px -6px #000;
 }
 
 .image-wrapper-mission {
